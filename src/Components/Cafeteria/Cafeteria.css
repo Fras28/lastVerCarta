@@ -1,0 +1,19 @@
+.titleSection{
+    font-family: 'Noto Serif Oriya', serif;
+color: orange;
+
+
+}
+.cafeBg{
+    border-radius: 20px;
+
+}
+.conteinerLC{
+    /* height: 70vh; */
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(26, 26, 26);
+  
+  }

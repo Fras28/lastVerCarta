@@ -1,0 +1,38 @@
+
+
+
+.conteinerLB{
+  height: 70vh;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
+}
+.conteinerLB2{
+  margin: auto;
+ border-radius: 5%;
+}
+.titInicio{
+  padding: .7rem;
+  margin: .3rem;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+ 
+}
+
+
+
+.titInicio:hover{
+  color: #FB7F03;
+  border-radius: 20%;
+  border: solid white;
+
+}
+.navLink{
+  text-decoration:none;
+}
+
+

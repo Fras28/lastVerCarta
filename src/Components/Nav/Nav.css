@@ -1,0 +1,106 @@
+.contNav{
+background-image: url("https://elpancito.ar/wp-content/uploads/sites/65/2021/02/close-up-of-hands-barista-make-latte-coffee-art-paint-scaled-1.jpg");
+background-position: center;    
+background-size: cover;
+background-repeat: no-repeat;
+padding-bottom: 1rem;
+padding-top: 1rem;
+
+}
+h1{
+    color: rgb(255, 255, 255) ;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-text-stroke: 1px #FB7F03;
+}
+.subName{
+    color: white;
+    margin-top: 0;
+}
+
+.section2{
+    display: flex;
+    justify-content: space-around
+}
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.formNav button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+  /* styling of whole input container */
+  .formNav {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #FB7F03;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+  }
+  /* styling of Input */
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+  /* styling of animated border */
+  .formNav:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  /* Hover on Input */
+  .formNav:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  /* here is code of animated border */
+  .formNav:focus-within:before {
+    transform: scale(1);
+  }
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* sizing svg icons */
+  .formNav svg {
+    width: 17px;
+    margin-top: 3px;
+  }

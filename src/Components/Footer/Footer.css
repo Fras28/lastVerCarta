@@ -1,0 +1,26 @@
+/* .footy{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FB7F03;
+    color: white;
+    text-align: center;
+
+} */
+.links{
+    margin-left: .5rem;
+    margin-right: .5rem;
+   
+}
+.redes{
+    fill:#FB7F03;
+}
+.contact{
+    color: aliceblue;
+    margin-bottom: 0;
+    margin-top: .5rem;
+}
+.linkC:hover .redes{
+    fill:#fbae61;
+}
