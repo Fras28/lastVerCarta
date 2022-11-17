@@ -2,7 +2,6 @@ import React from "react";
 import { Cards } from "../Cards/Cards.jsx";
 import "./Comidas.css";
 import { jsonCafe } from "../json";
-import { Foot } from "../Footer/Footer.jsx";
 import { Nav } from "../Nav/Nav.jsx";
 
 export const Comidas = () => {

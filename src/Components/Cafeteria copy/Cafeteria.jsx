@@ -2,7 +2,7 @@ import React from "react";
 import { Cards } from "../Cards/Cards.jsx";
 import "./Cafeteria.css";
 import { jsonCafe } from "../json";
-import { Nav } from "../Nav/Nav.jsx";
+
 
 export const Cafeteria = () => {
 

@@ -1,7 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Foot } from "../Footer/Footer";
-
 import "./LandingPage.css";
 
 export default function LandingPage() {
