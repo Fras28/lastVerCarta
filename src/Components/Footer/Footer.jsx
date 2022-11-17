@@ -9,7 +9,7 @@ export const Foot = () => {
         <br />
         <a
           className="links"
-          href="https://www.instagram.com/frans_selvarolo/"
+          href="https://walink.co/55984b"
           Target="_blank"
         >
       <svg className="linkC" width="46" height="46" viewBox="0 0 538 521" fill="none" xmlns="http://www.w3.org/2000/svg">
