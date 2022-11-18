@@ -8,7 +8,6 @@ export default function LandingPage() {
     <div className="containerL">
         <div className="naviLanding"><NavLink to="/">
         <img src={Loguito} alt=""/>
-        <p className="nMenu">.  :  NUESTRO MENU  :  .</p>
          </NavLink>
         </div> 
       <div className="conteinerLB">

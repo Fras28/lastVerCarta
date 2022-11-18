@@ -10,6 +10,7 @@ color: orange;
 }
 .conteinerLC{
     /* height: 70vh; */
+    margin-top: 0.5rem;
     display: flex;
     border-radius: 20px;
     align-items: center;
