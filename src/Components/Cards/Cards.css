@@ -1,4 +1,8 @@
 .carta{
-    border-bottom: 1.5px double orange;
+    background-color:#567277;
+
     padding-bottom: .5rem;
+}
+.granoCafe{
+    margin-top: 1.5rem;
 }

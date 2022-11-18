@@ -6,10 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://elpancito.ar/wp-content/uploads/sites/65/2021/02/close-up-of-hands-barista-make-latte-coffee-art-paint-scaled-1.jpg");
-  background-position: center;    
-  background-size: cover;
-  background-repeat: no-repeat;
+
+background-color: orange;
 }
 
 code {

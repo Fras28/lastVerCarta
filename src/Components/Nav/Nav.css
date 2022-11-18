@@ -1,10 +1,10 @@
 .contNav{
-background-image: url("https://elpancito.ar/wp-content/uploads/sites/65/2021/02/close-up-of-hands-barista-make-latte-coffee-art-paint-scaled-1.jpg");
-background-position: center;    
-background-size: cover;
-background-repeat: no-repeat;
-padding-bottom: 1rem;
-padding-top: 1rem;
+  background-position: center;    
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-image: url("https://cdn.create.vista.com/api/media/small/382777506/stock-photo-oriental-outline-ornament-seamless-pattern");
 
 }
 h1{
@@ -20,7 +20,7 @@ h1{
 
 .section2{
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
 }
 /* From uiverse.io by @satyamchaudharydev */
 /* removing default style of button */
@@ -45,10 +45,11 @@ h1{
     height: var(--height-of-input);
     display: flex;
     align-items: center;
-    padding-inline: 0.8em;
     border-radius: var(--border-radius);
     transition: border-radius 0.5s ease;
     background: var(--input-bg,#fff);
+    height: 20px;
+    width:250px ;
   }
   /* styling of Input */
   .input {
@@ -103,4 +104,10 @@ h1{
   .formNav svg {
     width: 17px;
     margin-top: 3px;
+  }
+
+  /*============= Search bar ==========*/
+
+  .logNav{
+    width: 80%;
   }

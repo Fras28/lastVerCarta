@@ -1,38 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Cards } from "../Cards/Cards.jsx";
 import "./Cafeteria.css";
-import { jsonCafe } from "../json";
 import { Nav } from "../Nav/Nav.jsx";
+import { useDispatch, useSelector } from "react-redux";
+import { asyncallProducts } from "../redux/slice.jsx";
 
 export const Cafeteria = () => {
+  let dispatch = useDispatch();
 
-  const Cafex = jsonCafe.filter((e) => e.section === "Cafe");
-  const CafeEspecial = jsonCafe.filter((e) => e.section === "Cafe Especial");
-  const Infusionesx = jsonCafe.filter((e) => e.section === "Infusiones");
-  const ColdBrew = jsonCafe.filter((e) => e.section === "Cold Brew");
-  const CafeFrio = jsonCafe.filter((e) => e.section === "Cafe Frio");
-  const Desayunox = jsonCafe.filter((e) => e.section === "DESAYUNO");
+  let { allProduct } = useSelector((state) => state.alldata);
+
+  useEffect(() => {
+    if (allProduct.length === 0) dispatch(asyncallProducts());
+  }, [allProduct, dispatch]);
+
+  console.log(allProduct, "acaaaaaaa redux ==============================");
+
+  const Cafex = allProduct?.filter((e) => e.section === "Cafe");
+  const CafeEspecial = allProduct?.filter((e) => e.section === "Cafe Especial");
+  const Infusionesx = allProduct?.filter((e) => e.section === "Infusiones");
+  const ColdBrew = allProduct?.filter((e) => e.section === "Cold Brew");
+  const CafeFrio = allProduct?.filter((e) => e.section === "Cafe Frio");
+  const Desayunox = allProduct?.filter((e) => e.section === "DESAYUNO");
 
   return (
     <div className="containerL">
-       <Nav/>
-  <div  className="conteinerLC">
-    <div className="conteinerLB2">
-      <h2 className="titleSection">CAFE</h2>
-      <Cards products={Cafex} />
-      <h2 className="titleSection">CAFE ESPECIAL</h2>
-      <Cards products={CafeEspecial} />
-      <h2 className="titleSection">INFUCIONES</h2>
-      <Cards products={Infusionesx} />
-      <h2 className="titleSection">COLD BREW</h2>
-      <Cards products={ColdBrew} />
-      <h2 className="titleSection">CAFE FRIO</h2>
-      <Cards products={CafeFrio} />
-      <h2 className="titleSection">DESAYUNO</h2>
-      <Cards products={Desayunox} />
+      <Nav />
+      <div className="conteinerLC">
+        <div className="conteinerLB2">
+          <Cards products={Cafex}/>
+          <Cards products={CafeEspecial} />
+          <Cards products={Infusionesx} />
+          <Cards products={ColdBrew} />
+          <Cards products={CafeFrio} />
+          <Cards products={Desayunox} />
         </div>
-  </div>
-
+      </div>
     </div>
   );
 };

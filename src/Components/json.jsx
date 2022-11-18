@@ -1,5 +1,5 @@
 
-export const jsonCafe= [
+export let jsonCafe= [
     {
         name: "EXPRESO JARRITO",
         photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",

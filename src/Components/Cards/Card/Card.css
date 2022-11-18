@@ -1,5 +1,5 @@
 .nameProd{
-    color:whitesmoke;
+    color:black;
     margin-bottom: 0;
     margin-top: .5rem;
     text-align: left;
@@ -8,14 +8,14 @@
     font-weight: 200;
 }
 .detProd{
-    color:whitesmoke;
+    color:black;
     text-align: left;
     margin-bottom: 0;
     margin-top: 0rem;
     font-size: .7rem;
 }
 .rightInfo{
-    color:orange;
+    color:black;
     font-family: 'Bebas Neue', cursive;
     font-family: 'Sono', sans-serif;
     text-align: end;
@@ -34,7 +34,7 @@
     align-items: center;
     padding-bottom: 1rem;
     padding-left: 1rem;
-    background-color: black;
+    background-color: #ffffff;
     box-shadow: 0 4px 2px -2px gray;
 
 }

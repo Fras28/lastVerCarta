@@ -18,17 +18,11 @@ export const Comidas = () => {
        <Nav/>
   <div  className="conteinerLC">
     <div className="conteinerLB2">
-      <h2 className="titleSection">PASTELERÍA</h2>
       <Cards products={Cafex} />
-      <h2 className="titleSection">TORTAS</h2>
       <Cards products={CafeEspecial} />
-      <h2 className="titleSection">TARTAS</h2>
       <Cards products={Infusionesx} />
-      <h2 className="titleSection">PIZZAS</h2>
       <Cards products={ColdBrew} />
-      <h2 className="titleSection">BURGER</h2>
       <Cards products={CafeFrio} />
-      <h2 className="titleSection">TAPEOS</h2>
       <Cards products={Desayunox} />
         </div>
   </div>

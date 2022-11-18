@@ -19,7 +19,7 @@ export const Foot = () => {
 
         <a
           className="links"
-          href="https://www.instagram.com/frans_selvarolo/"
+          href="https://www.instagram.com/bastardocoffee/"
           Target="_blank"
         >
           <svg
