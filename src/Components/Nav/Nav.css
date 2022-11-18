@@ -112,7 +112,11 @@ h1{
   }
 
   .btnBag{
+    outline: black double 1px;
     background-color: orange;
     border: none;
     border-radius: 20%;
+  }
+  .btnBag:hover{
+    background-color: green;
   }
