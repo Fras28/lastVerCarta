@@ -9,10 +9,7 @@ import "./myBag.css"
 export const Bag =()=>{
 let dispatch = useDispatch()
 let {favProd} =useSelector((state) => state.alldata);
-console.log(favProd)
-// useEffect(() => {
-//  dispatch(asyncCancelFav());
-//   }, [ dispatch]);
+
 
 
     return(

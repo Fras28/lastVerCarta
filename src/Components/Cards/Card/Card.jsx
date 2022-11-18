@@ -5,7 +5,7 @@ import { asyncfavProducts } from "../../redux/slice";
 import "./Card.css";
 
 export const Card = ({producto}) => {
-console.log(producto.name)
+
   
     const dispatch = useDispatch()
     const [articles, setArticles] = useState({

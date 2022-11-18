@@ -15,7 +15,7 @@ export const Nav = () => {
     //setError(false);
     setSearch(e.target.value);
   };
-  console.log(copyallProducts);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();

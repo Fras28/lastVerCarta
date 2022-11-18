@@ -39,3 +39,8 @@ color: orange;
       background-position: 0% 50%;
     }
   }
+  .imgsTit{
+    object-fit: cover;
+    object-position: center;
+    border: double 2px orange;
+  }

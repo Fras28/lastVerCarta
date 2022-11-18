@@ -7,12 +7,11 @@
 
 .contBag{
         margin: auto;
-       border-radius: 5%;
        min-height: 62vh;
        display: flex;
        flex-direction: column;
        justify-content: flex-start;
-      margin-top: .5rem;
+       outline:double 2px orange;
 background-image: linear-gradient(
     -45deg,
     #6d8b90 0%,

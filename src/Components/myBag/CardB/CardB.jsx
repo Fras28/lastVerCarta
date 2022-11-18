@@ -5,7 +5,7 @@ import { asyncCancelFav, asyncfavProducts } from "../../redux/slice";
 import "./CardB.css";
 
 export const CardBag = ({producto}) => {
-console.log(producto.name)
+
   
     const dispatch = useDispatch()
     const [articles, setArticles] = useState({

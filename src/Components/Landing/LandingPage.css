@@ -1,12 +1,4 @@
-
-
-
-.conteinerLB{
-  height: 62vh;
-  display: flex;
-  border-radius: 20px;
-  align-items: center;
-  justify-content: center;
+.containerL{
   background-image: linear-gradient(
     -45deg,
     #6d8b90 0%,
@@ -15,6 +7,15 @@
     #3d595e 100%
   );
   animation: AnimateBG 20s ease infinite;
+}
+
+
+.conteinerLB{
+  height: 62vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ outline:solid 3px orange;
 }
 
 @keyframes AnimateBG {
@@ -56,7 +57,7 @@ font-family: 'Sono', sans-serif;
   background-image: url(https://cdn.create.vista.com/api/media/small/382777506/stock-photo-oriental-outline-ornament-seamless-pattern);
   flex-direction: column;
   justify-content: center; 
-  margin-bottom: .5rem;
+
 }
 
 

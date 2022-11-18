@@ -10,7 +10,7 @@ export const Cards = ({products}) =>{
 
 
   
-console.log(products)
+
   return (
     <div className="carta">
         <h2 className="titleSection">{products[0]?.section.toUpperCase()}</h2>
