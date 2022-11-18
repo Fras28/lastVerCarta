@@ -8,13 +8,14 @@ import "./CardsB.css";
 
 
 export const CardsBag = ({products}) =>{
-
-
-  
-console.log(products)
+const valores = products.map(e => parseInt( e.price,10))
+let total =  valores.reduce((a,b)=>a+b,0)
   return (
     <div className="cartaB">
-  
+  <div className="montoTotal">
+<span className="aPagar" >Total :${total} </span>
+
+  </div>
       <div>
       {products?.map((e)=><CardBag  producto={e}/> )}
        </div>

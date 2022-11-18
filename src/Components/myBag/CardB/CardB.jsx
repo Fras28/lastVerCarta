@@ -35,7 +35,7 @@ console.log(producto.name)
         <p className="detProd">{producto.detail}</p>
       </div>
       <div className="rightInfo">
-      <p className="priceProd">{producto.price}</p>
+      <p className="priceProd">${producto.price}</p>
       <div className="divBtnProd">
         <button className="btnPlus" onClick={cancelFav} >
         <svg  width="30"

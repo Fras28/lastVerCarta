@@ -37,7 +37,7 @@ const artName = [];
         <p className="detProd">{producto.detail}</p>
       </div>
       <div className="rightInfo">
-        <p className="price">{producto.price}</p>
+        <p className="price">${producto.price}</p>
 <div className="divBtnProd">
 
         <button className="btnPlus" onClick={artAdd} >
