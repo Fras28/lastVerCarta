@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { asyncfavProducts } from "../../redux/slice";
-import "./Card.css";
+import "./CardB.css";
 
-export const Card = ({producto}) => {
+export const CardBag = ({producto}) => {
 console.log(producto.name)
   
     const dispatch = useDispatch()
-const artName = [];
-
     const [articles, setArticles] = useState({
         name:[],
     });

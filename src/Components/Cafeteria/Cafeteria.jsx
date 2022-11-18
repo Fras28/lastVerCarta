@@ -14,8 +14,6 @@ export const Cafeteria = () => {
     if (allProduct.length === 0) dispatch(asyncallProducts());
   }, [allProduct, dispatch]);
 
-  console.log(allProduct, "acaaaaaaa redux ==============================");
-
   const Cafex = allProduct?.filter((e) => e.section === "Cafe");
   const CafeEspecial = allProduct?.filter((e) => e.section === "Cafe Especial");
   const Infusionesx = allProduct?.filter((e) => e.section === "Infusiones");

@@ -1,12 +1,13 @@
 import React from "react";
-import { Card } from "./Card/Card";
+
+import { CardBag } from "./Card/CardB";
 
 
 
-import "./Cards.css";
+import "./CardsB.css";
 
 
-export const Cards = ({products}) =>{
+export const CardsBag = ({products}) =>{
 
 
   
@@ -15,7 +16,7 @@ console.log(products)
     <div className="carta">
         <h2 className="titleSection">{products[0]?.section.toUpperCase()}</h2>
       <div>
-      {products?.map((e)=><Card  producto={e}/> )}
+      {products?.map((e)=><CardBag  producto={e}/> )}
        </div>
     </div>
   );

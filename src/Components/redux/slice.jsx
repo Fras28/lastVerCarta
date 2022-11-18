@@ -6,22 +6,11 @@ import {jsonCafe} from "../json"
 const initialState = {
   allProduct: [],
   copyallProducts: [],
-  genres: [],
-  details: {},
-  infoInput: {},
-  user: {},
-  commetDeleteMessage: "",
-  commentMovie: {},
-  commentFromMovies: [],
-  allUsers: [],
-  payPaypalSil: {},
-  payPaypalGold: {},
-  favoriteMovie: [],
-  categorySwich: {},
-  lastFavorite:{}
+  favProd:[]
 };
 
 export const dataSlice = createSlice({
+
   name: "allData",
   initialState,
   reducers: {
@@ -29,6 +18,12 @@ export const dataSlice = createSlice({
       console.log(action.payload.jsonCafe , "===========REDUCER===========")
       state.allProduct = action.payload.jsonCafe;
       state.copyallProducts = action.payload.jsonCafe;
+    },
+
+    favProducts:(state, action) => {
+      console.log(action,"acaaa estado action");
+ 
+    state.favProd =[...state.favProd, action.payload]
     },
 
 
@@ -46,11 +41,18 @@ export const asyncallProducts = () => {
   };
 };
 
+export const asyncfavProducts = (pedido) => {
+  console.log(pedido, "asynzfavProd")
+  return async function (dispatch) {
+    return dispatch(favProducts(pedido));
+  };
+};
 
 //----------------------------------------------------------------------------------------------------------------
 
 export const {
   allProducts,
+  favProducts
   
 } = dataSlice.actions;
 
