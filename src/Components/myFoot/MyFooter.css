@@ -1,24 +1,38 @@
-.footy{
-padding-bottom: 10%;
+.Mfooty{
+padding-bottom: 5%;
 background-image: url("https://cdn.create.vista.com/api/media/small/382777506/stock-photo-oriental-outline-ornament-seamless-pattern");
-margin-bottom: -1px;
+display: flex;
+margin-top: 0;
 } 
-.links{
-    margin-left: .5rem;
-    margin-right: .5rem;
+.Mlinks{
+
    
 }
 .redes{
     fill:#FB7F03;
 }
-.contact{
+.Mcontact{
     font-family: 'Bebas Neue', cursive;
     font-family: 'Sono', sans-serif;
-    font-size: 1rem;
+    font-size: .6rem;
     color: aliceblue;
     margin-bottom: 0;
     margin-top: .5rem;
 }
+.McontactT{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Sono', sans-serif;
+    font-size: .6rem;
+    color: aliceblue;
+    margin-bottom: 0;
+    margin-top: .5rem;
+    margin-right: .5rem;
+}
 .linkC:hover .redes{
     fill:#fbae61;
+}
+
+.myLinkss{
+    display: flex;
+    margin: auto;
 }

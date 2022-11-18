@@ -6,6 +6,7 @@ import { Cafeteria } from './Components/Cafeteria/Cafeteria.jsx';
 import { Foot } from './Components/Footer/Footer.jsx';
 import { Comidas } from './Components/Comidas/Comidas';
 import { Bag } from './Components/myBag/myBag.jsx';
+import { MyFoot } from './Components/myFoot/MyFooter.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/Bag" component={Bag}/>
 </Switch>
   <Foot/>
+  <MyFoot/>
     </div>
   );
 }

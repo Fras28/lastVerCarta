@@ -8,8 +8,6 @@ export const Card = ({producto}) => {
 console.log(producto.name)
   
     const dispatch = useDispatch()
-const artName = [];
-
     const [articles, setArticles] = useState({
         name:[],
     });

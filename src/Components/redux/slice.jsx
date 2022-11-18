@@ -6,7 +6,8 @@ import {jsonCafe} from "../json"
 const initialState = {
   allProduct: [],
   copyallProducts: [],
-  favProd:[]
+  favProd:[],
+
 };
 
 export const dataSlice = createSlice({
@@ -32,6 +33,10 @@ export const dataSlice = createSlice({
        const newBag = state.favProd.splice(indexProd,1)
        state.favProd = state.favProd.filter(e => e !== newBag)
      }else  state.favProd = state.favProd 
+    },
+    SearchProducts:(state, action) => {
+      console.log(action.payload.slice(0,10), "===========aca======")
+     state.copyallProducts= state.copyallProducts.filter(e=> e.name.includes(action.payload)===true).slice(0,10)
     }
   },
 });
@@ -41,7 +46,6 @@ export const dataSlice = createSlice({
 //----------------------------------------------------------------------------------------------------------------
 
 export const asyncallProducts = () => {
-
   return async function (dispatch) {
     return dispatch(allProducts({jsonCafe}));
   };
@@ -58,13 +62,19 @@ export const asyncCancelFav = (pedido) => {
     return dispatch(cancelBagProducts(pedido));
   };
 };
+export const asyncSearchBar = (string)=>{
+  return async function (dispatch) {
+    return dispatch(SearchProducts(string));
+  };
+}
 
 //----------------------------------------------------------------------------------------------------------------
 
 export const {
   allProducts,
   favProducts,
-  cancelBagProducts
+  cancelBagProducts,
+  SearchProducts
   
 } = dataSlice.actions;
 

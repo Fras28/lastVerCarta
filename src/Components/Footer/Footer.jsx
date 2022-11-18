@@ -4,7 +4,7 @@ import "./Footer.css";
 export const Foot = () => {
   return (
     <footer className="footy">
-      <div className="myLinkss">
+      <div className="linkss">
         <p className="contact">Contact</p>
         <br />
         <a
