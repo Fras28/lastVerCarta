@@ -6,6 +6,7 @@
   font-family: "Bebas Neue", cursive;
   font-family: "Sono", sans-serif;
   font-weight: 200;
+
 }
 .detProd {
   color: black;
@@ -59,3 +60,13 @@
     display: flex;
     gap: .5rem;
 }
+.btnPlus:hover .efadd{
+fill: green;
+}
+
+.priceProd{
+  font-size: 1.2rem;
+}
+.btnPlus:hover .efCancel{
+  fill: rgb(181, 0, 0);
+  }

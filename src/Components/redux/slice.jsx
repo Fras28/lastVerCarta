@@ -25,8 +25,14 @@ export const dataSlice = createSlice({
  
     state.favProd =[...state.favProd, action.payload]
     },
-
-
+    cancelBagProducts:(state, action) => {
+      console.log(action,"acaaa estado action");
+     const indexProd = state.favProd.indexOf(action.payload)
+     if(indexProd !==" -1"){
+       const newBag = state.favProd.splice(indexProd,1)
+       state.favProd = state.favProd.filter(e => e !== newBag)
+     }else  state.favProd = state.favProd 
+    }
   },
 });
 
@@ -35,16 +41,21 @@ export const dataSlice = createSlice({
 //----------------------------------------------------------------------------------------------------------------
 
 export const asyncallProducts = () => {
-  console.log({jsonCafe},"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+
   return async function (dispatch) {
     return dispatch(allProducts({jsonCafe}));
   };
 };
 
 export const asyncfavProducts = (pedido) => {
-  console.log(pedido, "asynzfavProd")
   return async function (dispatch) {
     return dispatch(favProducts(pedido));
+  };
+};
+export const asyncCancelFav = (pedido) => {
+  console.log(pedido, "asynzfavProd")
+  return async function (dispatch) {
+    return dispatch(cancelBagProducts(pedido));
   };
 };
 
@@ -52,7 +63,8 @@ export const asyncfavProducts = (pedido) => {
 
 export const {
   allProducts,
-  favProducts
+  favProducts,
+  cancelBagProducts
   
 } = dataSlice.actions;
 

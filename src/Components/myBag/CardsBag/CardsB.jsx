@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CardBag } from "./Card/CardB";
+import { CardBag } from "../CardB/CardB";
 
 
 
@@ -13,8 +13,8 @@ export const CardsBag = ({products}) =>{
   
 console.log(products)
   return (
-    <div className="carta">
-        <h2 className="titleSection">{products[0]?.section.toUpperCase()}</h2>
+    <div className="cartaB">
+  
       <div>
       {products?.map((e)=><CardBag  producto={e}/> )}
        </div>

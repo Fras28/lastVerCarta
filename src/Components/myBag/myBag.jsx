@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Cards } from "../Cards/Cards";import { CardsBag } from "../CardsBag/CardsB";
+import { CardsBag } from "./CardsBag/CardsB";
 import { Nav } from "../Nav/Nav";
-import { asyncfavProducts } from "../redux/slice";
+import { asyncCancelFav } from "../redux/slice";
+import "./myBag.css"
 
 
 export const Bag =()=>{
@@ -10,15 +11,17 @@ let dispatch = useDispatch()
 let {favProd} =useSelector((state) => state.alldata);
 console.log(favProd)
 // useEffect(() => {
-//  dispatch(asyncfavProducts());
+//  dispatch(asyncCancelFav());
 //   }, [ dispatch]);
 
 
     return(
         <div className="backBag">
              <Nav />
+             <div className="contBag">
 <h1 className="titBag">TU PEDIDO !</h1>
 <CardsBag products={favProd}/>
         </div>
+             </div>
     )
 }
