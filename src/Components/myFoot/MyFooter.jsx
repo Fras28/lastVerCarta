@@ -15,7 +15,7 @@ export const MyFoot = () => {
         </a>
         <a
           className="Mlinks"
-          href="https://www.instagram.com/bastardocoffee/"
+          href="https://www.instagram.com/frans_selvarolo/"
           Target="_blank"
         >
          <p className="Mcontact">/Instagram</p>
