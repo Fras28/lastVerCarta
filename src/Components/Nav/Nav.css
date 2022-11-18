@@ -20,6 +20,7 @@ h1{
 .section2{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 /* From uiverse.io by @satyamchaudharydev */
 /* removing default style of button */
