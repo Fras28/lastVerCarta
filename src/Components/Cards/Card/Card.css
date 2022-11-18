@@ -54,6 +54,8 @@
 .btnPlus {
   background-color: transparent;
   border: none;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .rightInfo{
     display: flex;

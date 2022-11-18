@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
+import Swal from "sweetalert2";
 import { asyncfavProducts } from "../../redux/slice";
 import "./Card.css";
 
@@ -20,6 +21,13 @@ const artName = [];
             price:producto.price
         })
         dispatch(asyncfavProducts(producto))
+        Swal.fire({
+          position: 'bottom-end',
+          icon: '',
+          title: 'Agregado',
+          showConfirmButton: false,
+          timer: 350
+        })
     }
 
   return (
@@ -30,6 +38,7 @@ const artName = [];
       </div>
       <div className="rightInfo">
         <p className="price">{producto.price}</p>
+<div className="divBtnProd">
 
         <button className="btnPlus" onClick={artAdd} >
           <svg
@@ -49,6 +58,7 @@ const artName = [];
             />
           </svg>
         </button>
+</div>
       </div>
     </div>
   );

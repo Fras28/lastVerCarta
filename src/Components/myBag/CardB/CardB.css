@@ -70,3 +70,8 @@ fill: green;
 .btnPlus:hover .efCancel{
   fill: rgb(181, 0, 0);
   }
+
+  .divBtnProd{
+    display: flex;
+    align-items: center;
+  }
