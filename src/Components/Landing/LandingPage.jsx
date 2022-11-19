@@ -14,7 +14,7 @@ export default function LandingPage() {
 
       <div className="conteinerLB2">
         <NavLink className="navLink" to="/Cafeteria">
-     <p className="titInicio">CAFETERIA/PASTELERIA</p>
+     <p className="titInicio">CAFETERIA/PASTELERIA </p>
         </NavLink>
         <NavLink className="navLink" to="/Comidas">
      <p className="titInicio">COMIDAS</p>
