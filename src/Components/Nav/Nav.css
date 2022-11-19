@@ -116,6 +116,7 @@ h1{
     background-color: orange;
     border: none;
     border-radius: 20%;
+    padding-top: 0.3rem;
   }
   .btnBag:hover{
     background-color: green;

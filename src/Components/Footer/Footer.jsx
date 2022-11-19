@@ -5,8 +5,6 @@ export const Foot = () => {
   return (
     <footer className="footy">
       <div className="linkss">
-        <p className="contact">Contact</p>
-        <br />
         <a
           className="links"
           href="https://walink.co/55984b"
