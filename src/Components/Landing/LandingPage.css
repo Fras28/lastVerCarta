@@ -53,7 +53,7 @@ font-family: 'Sono', sans-serif;
 .naviLanding{
   display: flex;
   align-items: center;
-  min-height: 162px;
+  min-height: 138px;
   background-image: url(https://cdn.create.vista.com/api/media/small/382777506/stock-photo-oriental-outline-ornament-seamless-pattern);
   flex-direction: column;
   justify-content: center; 
