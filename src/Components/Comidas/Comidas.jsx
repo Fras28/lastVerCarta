@@ -3,7 +3,6 @@ import { Cards } from "../Cards/Cards.jsx";
 import "./Comidas.css";
 import { jsonCafe } from "../json";
 import { Nav } from "../Nav/Nav.jsx";
-import comidaImg from "../assets/comida.jpg"
 
 export const Comidas = () => {
 
@@ -19,7 +18,7 @@ export const Comidas = () => {
        <Nav/>
   <div  className="conteinerLC">
     <div className="conteinerLB2">
-    <img className="imgsTit" width="99%" height="200px"  src={comidaImg} alt="" />
+
       <Cards products={Cafex} />
       <Cards products={CafeEspecial} />
       <Cards products={Infusionesx} />

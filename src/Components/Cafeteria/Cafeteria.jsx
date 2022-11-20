@@ -4,7 +4,7 @@ import "./Cafeteria.css";
 import { Nav } from "../Nav/Nav.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { asyncallProducts } from "../redux/slice.jsx";
-import cafeImg from "../assets/cafe.jpg"
+
 
 export const Cafeteria = () => {
   let dispatch = useDispatch();
@@ -27,7 +27,6 @@ export const Cafeteria = () => {
       <Nav />
       <div className="conteinerLC">
         <div className="conteinerLB2">
-        <img className="imgsTit" width="99%" height="200px"  src={cafeImg} alt="" />
           <Cards products={Cafex}/>
           <Cards products={CafeEspecial} />
           <Cards products={Infusionesx} />

@@ -1,8 +1,6 @@
 .titleSection{
-    font-family: 'Noto Serif Oriya', serif;
-color: orange;
-
-
+font-size: 2rem;
+color: #18a59d;
 }
 .cafeBg{
     border-radius: 20px;
@@ -15,14 +13,16 @@ color: orange;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
+    border-radius: 5%;
+    border: double #18a59d;
     background-image: linear-gradient(
       -45deg,
-      #6d8b90 0%,
-      #7a9fa5 25%,
-      #567277 51%,
-      #3d595e 100%
+      #ffde63 0%,
+      #f7dc7a 25%,
+      #ffde63 51%,
+      #f7dc7a 100%
     );
-    animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 5s ease infinite;
   }
   
   @keyframes AnimateBG {
@@ -42,5 +42,7 @@ color: orange;
   .imgsTit{
     object-fit: cover;
     object-position: center;
-    border: double 2px orange;
+    border: double 2px #18a59d;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
