@@ -12,3 +12,7 @@
 .granoCafe{
     margin-top: 1.5rem;
 }
+
+.titleSection > svg{
+margin-bottom: 0;
+}

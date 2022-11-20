@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  background-image: url("https://cdn.create.vista.com/api/media/small/382777506/stock-photo-oriental-outline-ornament-seamless-pattern");
+  background-image: url(https://img.freepik.com/vector-premium/marco-hojas-acuarela-pintada-mano_158232-354.jpg);
 }
 h1{
     color: rgb(255, 255, 255) ;
@@ -107,16 +107,19 @@ h1{
 
   /*============= Search bar ==========*/
 
-  .logNav{
-    width: 80%;
+  .logoCM{
+    width: 20%;
+
   }
 
   .btnBag{
-    outline: black double 1px;
-    background-color: orange;
+    outline: #c1373e double 1px;
+    background-color: #295db1;
     border: none;
     border-radius: 20%;
     padding-top: 0.3rem;
+    color: white;
+    padding: .3rem;
   }
   .btnBag:hover{
     background-color: green;

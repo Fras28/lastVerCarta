@@ -1,21 +1,22 @@
-.containerL{
-  background-image: linear-gradient(
-    -45deg,
-    #6d8b90 0%,
-    #7a9fa5 25%,
-    #567277 51%,
-    #3d595e 100%
-  );
-  animation: AnimateBG 10s ease infinite;
+.containerL {
 }
 
-
-.conteinerLB{
-  height:70vh;
+.conteinerLB {
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
- outline:solid 3px orange;
+
+  border-radius: 5%;
+  border: double #18a59d;
+  background-image: linear-gradient(
+    -45deg,
+    #ffde63 0%,
+    #f7dc7a 25%,
+    #ffde63 51%,
+    #f7dc7a 100%
+  );
+  animation: AnimateBG 5s ease infinite;
 }
 
 @keyframes AnimateBG {
@@ -32,49 +33,62 @@
     background-position: 0% 50%;
   }
 }
-.conteinerLB2{
+.conteinerLB2 {
   margin: auto;
- border-radius: 5%;
- height: 80%;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- margin-top: .5rem;
- margin-bottom: .5rem;
+  border-radius: 5%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-.titInicio{
-  padding: .7rem;
-  margin: .3rem;
+.titInicio {
+  padding: 0.7rem;
+  margin: 0.3rem;
   font-size: 1.5rem;
-  font-family: 'Bebas Neue', cursive;
-font-family: 'Sono', sans-serif; 
-  color: white;
+  font-weight: 700;
+  color: #18a59d;
 }
-.naviLanding{
+.naviLanding {
   display: flex;
   align-items: center;
   min-height: 138px;
-  background-image: url(https://cdn.create.vista.com/api/media/small/382777506/stock-photo-oriental-outline-ornament-seamless-pattern);
-  flex-direction: column;
-  justify-content: center; 
-
+  background-image: url(https://img.freepik.com/vector-premium/marco-hojas-acuarela-pintada-mano_158232-354.jpg);
+  justify-content: space-around;
+  font-size: 1.3rem;
+}
+.titCasa {
+  display: flex;
 }
 
-
-.titInicio:hover{
+.titInicio:hover {
   color: #d47618;
   border-radius: 20%;
   border: solid white;
-
 }
-.navLink{
-  text-decoration:none;
+.navLink {
+  text-decoration: none;
 }
 
-
-.nMenu{
+.nMenu {
   color: white;
   margin-top: 0;
-  margin-bottom: .5rem;
-  padding-bottom: .5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.leta1 {
+  color: #18a59d;
+}
+.leta2 {
+  color: #edcc27;
+}
+.leta3 {
+  color: #c1373e;
+}
+.leta4 {
+  color: #295db1;
+}
+a {
+  text-decoration: none;
 }
