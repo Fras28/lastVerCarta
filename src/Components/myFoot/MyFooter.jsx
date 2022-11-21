@@ -2,6 +2,7 @@ import React from "react";
 import "./MyFooter.css";
 
 export const MyFoot = () => {
+
   return (
     <footer className="Mfooty">
       <div className="myLinkss">
