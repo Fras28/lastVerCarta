@@ -49,6 +49,7 @@ h1{
     background: var(--input-bg,#fff);
     height: 20px;
     width:250px ;
+    border:solid 1px #18a59d;
   }
   /* styling of Input */
   .input {

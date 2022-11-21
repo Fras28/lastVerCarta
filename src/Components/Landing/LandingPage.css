@@ -1,5 +1,3 @@
-.containerL {
-}
 
 .conteinerLB {
   height: 70vh;
@@ -44,11 +42,13 @@
   margin-bottom: 0.5rem;
 }
 .titInicio {
+
   padding: 0.7rem;
   margin: 0.3rem;
   font-size: 1.5rem;
   font-weight: 700;
   color: #18a59d;
+
 }
 .naviLanding {
   display: flex;
@@ -57,9 +57,13 @@
   background-image: url(https://img.freepik.com/vector-premium/marco-hojas-acuarela-pintada-mano_158232-354.jpg);
   justify-content: space-around;
   font-size: 1.3rem;
+  
 }
 .titCasa {
   display: flex;
+  padding-top: 5%;
+  margin-bottom: 0;
+
 }
 
 .titInicio:hover {

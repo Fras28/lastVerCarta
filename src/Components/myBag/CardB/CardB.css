@@ -2,25 +2,24 @@
   color: black;
   margin-bottom: 0;
   margin-top: 0.5rem;
-  text-align: left;
   font-family: "Bebas Neue", cursive;
   font-family: "Sono", sans-serif;
   font-weight: 200;
-
+  text-align: center;
 }
 .detProd {
   color: black;
-  text-align: left;
   margin-bottom: 0;
   margin-top: 0rem;
   font-size: 0.7rem;
+  text-align: center;
 }
 .rightInfo {
   color: black;
   font-family: "Bebas Neue", cursive;
   font-family: "Sono", sans-serif;
   text-align: end;
-  padding-right: 0.5rem;
+  text-align: center;
 }
 
 .contCard {
@@ -29,16 +28,17 @@
   border-radius: 6px;
   margin-top: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-content: flex-start;
   align-items: center;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
   background-color: #ffffff;
   box-shadow: 0 4px 2px -2px gray;
+  flex-direction: column;
+  width: 45%;
+  min-height:160px ;
 }
 .contCard:hover {
-  background-color: orange;
+  background-color: #18A59D;
   color: black;
   box-shadow: 0 8px 4px -4px black;
 }
@@ -75,3 +75,7 @@ fill: green;
     display: flex;
     align-items: center;
   }
+
+  .btnPlus:hover .efAdd{
+    fill: rgb(40, 109, 12);
+    }
