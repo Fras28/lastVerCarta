@@ -53,15 +53,14 @@
 .naviLanding {
   display: flex;
   align-items: center;
-  min-height: 138px;
+  min-height: 100px;
   background-image: url(https://img.freepik.com/vector-premium/marco-hojas-acuarela-pintada-mano_158232-354.jpg);
   justify-content: space-around;
-  font-size: 1.3rem;
-  
+  font-size: 1.3rem;  
 }
 .titCasa {
   display: flex;
-  padding-top: 5%;
+  padding-top: 10%;
   margin-bottom: 0;
 
 }
