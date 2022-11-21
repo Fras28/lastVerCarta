@@ -1,7 +1,5 @@
 .titBag{
-    color: orange;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Sono', sans-serif;  
+    color: #18a59d; 
     margin-top: 1rem;
 }
 
@@ -11,15 +9,7 @@
        display: flex;
        flex-direction: column;
        justify-content: flex-start;
-       outline:double 2px orange;
-background-image: linear-gradient(
-    -45deg,
-    #6d8b90 0%,
-    #7a9fa5 25%,
-    #567277 51%,
-    #3d595e 100%
-  );
-  animation: AnimateBG 20s ease infinite;
+       outline:double 2px #18a59d;;
 }
 
 @keyframes AnimateBG {
@@ -37,3 +27,17 @@ background-image: linear-gradient(
   }
 }
 
+
+.backBag{
+  background-image: linear-gradient(
+    -45deg,
+    #ffde63 0%,
+    #f7dc7a 25%,
+    #ffde63 51%,
+    #f7dc7a 100%
+  );
+  animation: AnimateBG 20s ease infinite;
+}
+.bagSect{
+  border-top: solid #18a59d 2px;
+}

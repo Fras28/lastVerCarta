@@ -16,7 +16,7 @@ let total =  valores.reduce((a,b)=>a+b,0)
 <span className="aPagar" >Total :${total} </span>
 
   </div>
-      <div>
+      <div className="rowsCard">
       {products?.map((e)=><CardBag  producto={e}/> )}
        </div>
     </div>
