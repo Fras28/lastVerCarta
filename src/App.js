@@ -12,10 +12,10 @@ function App() {
   return (
     <div className="App">
 <Switch>
-          <Route exact path="/" component={Landing}/>
-          <Route exact path="/Cafeteria" component={Cafeteria}/>
-          <Route exact path="/Comidas" component={Comidas}/>
-          <Route exact path="/Bag" component={Bag}/>
+          <Route exact path="/:id" component={Landing}/>
+          <Route exact path="/:id/Cafeteria" component={Cafeteria}/>
+          <Route exact path="/:id/Comidas" component={Comidas}/>
+          <Route exact path="/:id/Bag" component={Bag}/>
 </Switch>
   <Foot/>
   <MyFoot/>

@@ -25,6 +25,10 @@ const volver = ()=>{
      <div className="contBag">
 <CardsBag products={favProd}/>
         </div>
+        <a     href="http://wa.me/542915729501?text=Hola Franco Mensaje de mi pedido , estamos en la mesa 8" target="_blank">
+
+        <button className="btnWssp" >Enviar WSSP</button>
+        </a>
              </div>
     )
 }

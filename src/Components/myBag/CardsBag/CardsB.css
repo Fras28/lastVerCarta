@@ -1,7 +1,5 @@
 .cartaB{
     padding-bottom: .5rem;
-
-
       padding-top: .5rem;
       padding-bottom: .5rem;
     }
@@ -24,4 +22,15 @@
   font-family: 'Bebas Neue', cursive;
 font-family: 'Sono', sans-serif;
 font-weight: 600;
+}
+
+
+
+.rowsCardBag{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
