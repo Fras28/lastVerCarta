@@ -1,22 +1,27 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import { CardsBag } from "./CardsBag/CardsB";
 import { Nav } from "../Nav/Nav";
 import "./myBag.css"
-import { useParams } from "react-router";
 
 
-export const Bag =()=>{
-  const {id} = useParams()
-let dispatch = useDispatch()
+
+export const Bag =(id)=>{
+
+
 let {favProd} =useSelector((state) => state.alldata);
+console.log(favProd)
 const volver = ()=>{
     window.history.back()
 }
 
+const valores = favProd.map(e => parseInt( e.price,10))
+let total =  valores.reduce((a,b)=>a+b,0)
+
+
     return(
         <div className="backBag">
-             <Nav />
+             <Nav id={id.match.params.id}/>
    <div className="bagSect">
 <h1 className="titBag"><b className="leta1">T</b><b className="leta2">U</b><b className="leta3"> P</b><b className="leta4">E</b><b className="leta1">D</b><b className="leta2">I</b><b className="leta3">D</b><b className="leta4">O</b>
 </h1>
@@ -27,10 +32,10 @@ const volver = ()=>{
      <div className="contBag">
 <CardsBag products={favProd}/>
         </div>
-        <a   href={`http://wa.me/542915729501?text=Hola Franco Mensaje de mi pedido , estamos en la mesa ${id}`} rel="noreferrer" target="_blank">
-
-        <button className="btnWssp" >Enviar WSSP</button>
-        </a>
+ {id.match.params.id === "sinMesa"?<p>Para realizar tu pedido por este medio debes encontrarte en alguna mesa </p>:
+        <a   href={`http://wa.me/542915729501?text=Hola Franco Mensaje de mi pedido ➤ ${favProd.map(e=>  e.name+"$"+e.price )} Total = $ ${total} , estamos en la mesa ${id.match.params.id}`} rel="noreferrer" target="_blank">
+       <button className="btnWssp" >Enviar Pedido !</button>
+        </a>}
              </div>
     )
 }

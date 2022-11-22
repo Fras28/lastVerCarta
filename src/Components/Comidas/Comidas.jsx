@@ -4,7 +4,7 @@ import "./Comidas.css";
 import { jsonCafe } from "../json";
 import { Nav } from "../Nav/Nav.jsx";
 
-export const Comidas = () => {
+export const Comidas = (id) => {
 
   const Cafex = jsonCafe.filter((e) => e.section === "PASTELERÍA");
   const CafeEspecial = jsonCafe.filter((e) => e.section === "TORTAS");
@@ -15,7 +15,7 @@ export const Comidas = () => {
 
   return (
     <div className="containerL">
-       <Nav/>
+     <Nav id={id.match.params.id} />
   <div  className="conteinerLC">
     <div className="conteinerLB2">
 
