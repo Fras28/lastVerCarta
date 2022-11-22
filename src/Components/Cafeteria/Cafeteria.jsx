@@ -4,12 +4,9 @@ import "./Cafeteria.css";
 import { Nav } from "../Nav/Nav.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { asyncallProducts } from "../redux/slice.jsx";
-import { useParams } from "react-router";
 
 
 export const Cafeteria = (id) => {
-console.log(id.match.params.id)
-
   let dispatch = useDispatch();
 
   let { allProduct } = useSelector((state) => state.alldata);
@@ -30,7 +27,7 @@ console.log(id.match.params.id)
       <Nav id={id.match.params.id} />
       <div className="conteinerLC">
         <div className="conteinerLB2">
-          <Cards products={Cafex}/>
+          <Cards products={Cafex} />
           <Cards products={CafeEspecial} />
           <Cards products={Infusionesx} />
           <Cards products={ColdBrew} />
