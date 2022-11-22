@@ -33,7 +33,7 @@ let total =  valores.reduce((a,b)=>a+b,0)
 <CardsBag products={favProd}/>
         </div>
  {id.match.params.id === "sinMesa"?<p>Para realizar tu pedido por este medio debes encontrarte en alguna mesa </p>:
-        <a   href={`http://wa.me/542915729501?text=Hola Franco Mensaje de mi pedido ➤ ${favProd.map(e=>  e.name+"$"+e.price )} Total = $ ${total} , estamos en la mesa ${id.match.params.id}`} rel="noreferrer" target="_blank">
+        <a   href={`http://wa.me/542915729501?text=Hola Franco Mensaje de mi pedido ➤ ${favProd.map(e =>  e.name+"$"+e.price + ", " )} Total = $ ${total} , estamos en la mesa ${id.match.params.id}`} rel="noreferrer" target="_blank">
        <button className="btnWssp" >Enviar Pedido !</button>
         </a>}
              </div>
