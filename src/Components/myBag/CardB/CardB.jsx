@@ -29,7 +29,7 @@ export const CardBag = ({producto}) => {
     }
 
   return (
-    <div className="contCard">
+    <div className="contCardBag">
       <div className="leftInfo">
         <h2 className="nameProd">{producto.name}</h2>
         <p className="detProd">{producto.detail}</p>
