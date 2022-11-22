@@ -3,9 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { CardsBag } from "./CardsBag/CardsB";
 import { Nav } from "../Nav/Nav";
 import "./myBag.css"
+import { useParams } from "react-router";
 
 
 export const Bag =()=>{
+  const {id} = useParams()
 let dispatch = useDispatch()
 let {favProd} =useSelector((state) => state.alldata);
 const volver = ()=>{
@@ -25,7 +27,7 @@ const volver = ()=>{
      <div className="contBag">
 <CardsBag products={favProd}/>
         </div>
-        <a     href="http://wa.me/542915729501?text=Hola Franco Mensaje de mi pedido , estamos en la mesa 8" target="_blank">
+        <a   href={`http://wa.me/542915729501?text=Hola Franco Mensaje de mi pedido , estamos en la mesa ${id}`} rel="noreferrer" target="_blank">
 
         <button className="btnWssp" >Enviar WSSP</button>
         </a>
