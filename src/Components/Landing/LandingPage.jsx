@@ -28,7 +28,7 @@ console.log(url.location.pathname) }
             <b className="leta2">E</b>
           </h1>
         </NavLink>
-      </div>t
+      </div>
       <div className="conteinerLB">
         <div className="conteinerLB2">
           <NavLink className="navLink" to={url.location.pathname === "/"?`/Cafeteria`:`${url.location.pathname}/Cafeteria`}>
