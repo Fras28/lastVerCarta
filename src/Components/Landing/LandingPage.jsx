@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./LandingPage.css";
 import Loguito from "../assets/casaMonteLogo.png";
-import { useParams } from "react-router";
+
 
 
 export default function LandingPage(url) {
