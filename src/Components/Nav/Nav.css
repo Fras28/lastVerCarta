@@ -1,9 +1,4 @@
-.contNav{
-  background-position: center;    
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(https://img.freepik.com/vector-premium/marco-hojas-acuarela-pintada-mano_158232-354.jpg);
-}
+
 h1{
     color: rgb(255, 255, 255) ;
     margin-top: 0;
@@ -14,112 +9,18 @@ h1{
     margin-top: 0;
 }
 
-.section2{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
+
+.nav{
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(240, 255, 255, 0.603);
+
 }
-/* From uiverse.io by @satyamchaudharydev */
-/* removing default style of button */
-
-.formNav button {
-    border: none;
-    background: none;
-    color: #8b8ba7;
-  }
-  /* styling of whole input container */
-  .formNav {
-    --timing: 0.3s;
-    --width-of-input: 200px;
-    --height-of-input: 40px;
-    --border-height: 2px;
-    --input-bg: #fff;
-    --border-color: #FB7F03;
-    --border-radius: 30px;
-    --after-border-radius: 1px;
-    position: relative;
-    width: var(--width-of-input);
-    height: var(--height-of-input);
-    display: flex;
-    align-items: center;
-    border-radius: var(--border-radius);
-    transition: border-radius 0.5s ease;
-    background: var(--input-bg,#fff);
-    height: 20px;
-    width:250px ;
-    border:solid 1px #18a59d;
-  }
-  /* styling of Input */
-  .input {
-    font-size: 0.9rem;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    padding-inline: 0.5em;
-    padding-block: 0.7em;
-    border: none;
-  }
-  /* styling of animated border */
-  .formNav:before {
-    content: "";
-    position: absolute;
-    background: var(--border-color);
-    transform: scaleX(0);
-    transform-origin: center;
-    width: 100%;
-    height: var(--border-height);
-    left: 0;
-    bottom: 0;
-    border-radius: 1px;
-    transition: transform var(--timing) ease;
-  }
-  /* Hover on Input */
-  .formNav:focus-within {
-    border-radius: var(--after-border-radius);
-  }
-  
-  input:focus {
-    outline: none;
-  }
-  /* here is code of animated border */
-  .formNav:focus-within:before {
-    transform: scale(1);
-  }
-  /* styling of close button */
-  /* == you can click the close button to remove text == */
-  .reset {
-    border: none;
-    background: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-  /* close button shown when typing */
-  input:not(:placeholder-shown) ~ .reset {
-    opacity: 1;
-    visibility: visible;
-  }
-  /* sizing svg icons */
-  .formNav svg {
-    width: 17px;
-    margin-top: 3px;
-  }
-
+.nav> a{
+margin-top: 16px;
+margin-left: 23%;
+ 
+}
   /*============= Search bar ==========*/
-
-  .logoCM{
-    width: 20%;
-margin: auto;
-  }
-
-  .btnBag{
-    outline: #c1373e double 1px;
-    background-color: #295db1;
-    border: none;
-    border-radius: 20%;
-    padding-top: 0.3rem;
-    color: white;
-    padding: .3rem;
-  }
-  .btnBag:hover{
-    background-color: green;
-  }
