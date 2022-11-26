@@ -26,7 +26,7 @@ export const dataSlice = createSlice({
     },
     cancelBagProducts:(state, action) => {
      const indexProd = state.favProd.indexOf(action.payload)
-     if(indexProd !==" -1"){
+     if(indexProd !=="-1"){
        const newBag = state.favProd.splice(indexProd,1)
        state.favProd = state.favProd.filter(e => e !== newBag)
      }else  state.favProd = state.favProd 

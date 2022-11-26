@@ -2,51 +2,16 @@
     color: #18a59d; 
 
 }
-.backBag{
-  border-bottom:double 2px #18a59d ;
-  background-image: linear-gradient(
-        -45deg,
-        #ffde63 0%,
-        #f7dc7a 25%,
-        #ffde63 51%,
-        #f7dc7a 100%
-      );
-      animation: AnimateBG 20s ease infinite;
-}
 .contBag{
         margin: auto;
-        min-height: 50vh;
+        min-height: 60vh;
        display: flex;
        flex-direction: column;
        justify-content: flex-start;
-       border-top:double 2px #18a59d;
-  
 }
-
-@keyframes AnimateBG {
-  0% {
-    background-position: 0% 25%;
-  }
-  25% {
-    background-position: 25% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
-
 .bagSect{
-  background-position: center;    
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(https://img.freepik.com/vector-premium/marco-hojas-acuarela-pintada-mano_158232-354.jpg);
+  margin-top: 100px;
 }
-
 
 .btnBack{
   outline: #c1373e double 1px;
@@ -68,6 +33,9 @@
   padding-top: .3rem;
   margin-top: .5rem;
   margin-bottom: .5rem;
+  border-radius: 24px;
+  border: solid white 2px;
+  text-align: center;
 }
 .warning{
   margin-bottom: -5px;

@@ -25,58 +25,68 @@
   padding-top: 1rem;
   text-align: center;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
-
-
 
 .btnPlus {
   width: 93px;
   height: 44px;
   border-radius: 24px;
   border: solid black 1px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  }
-  
-  .btnPlus:active {
-   background-color: darkgreen;
-    }
-  
-  .leftInfo{
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    gap: 4px;
-    align-items: flex-start;
-  }
-  .masMenos{
-    display: flex;
-    border-radius: 16px;
+}
+
+.btnPlus:active {
+  background-color: darkgreen;
+}
+
+.leftInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 4px;
+  align-items: flex-start;
+}
+.masMenos {
+  display: flex;
+  border-radius: 16px;
   overflow: hidden;
   align-items: center;
   width: 93px;
   height: 44px;
-  
+
   border-radius: 24px;
   background-color: #577377;
-  }
-  .masMenos>button{
-    border: none;
-    background-color: transparent;
-    width: 93px;
-    height: 44px;
+}
+.masMenos > button {
+  border: none;
+  background-color: transparent;
+  width: 93px;
+  height: 44px;
   color: white;
   font-weight: 600;
   font-size: 1rem;
-  
-  }
-  .cuantiti{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-  }
+}
+.cuantiti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: white;
+  padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  border-radius: 100%;
+}
+
+.contCard {
+  align-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-left: 0.3rem;
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 25%);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
