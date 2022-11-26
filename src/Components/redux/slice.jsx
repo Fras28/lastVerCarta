@@ -1,17 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import {jsonCafe} from "../json"
-
+import { jsonCafe } from "../json";
 
 const initialState = {
   allProduct: [],
   copyallProducts: [],
-  favProd:[],
-
+  favProd: [],
 };
 
 export const dataSlice = createSlice({
-
   name: "allData",
   initialState,
   reducers: {
@@ -20,20 +17,22 @@ export const dataSlice = createSlice({
       state.copyallProducts = action.payload.jsonCafe;
     },
 
-    favProducts:(state, action) => {
- 
-    state.favProd =[...state.favProd, action.payload]
+    favProducts: (state, action) => {
+      state.favProd = [...state.favProd, action.payload];
     },
-    cancelBagProducts:(state, action) => {
-     const indexProd = state.favProd.indexOf(action.payload)
-     if(indexProd !=="-1"){
-       const newBag = state.favProd.splice(indexProd,1)
-       state.favProd = state.favProd.filter(e => e !== newBag)
-     }else  state.favProd = state.favProd 
+    cancelBagProducts: (state, action) => {
+      const indexProd = state.favProd.indexOf(action.payload);
+      console.log(indexProd);
+      if (indexProd !== "-1") {
+        const newBag = state.favProd.splice(indexProd, 1);
+        state.favProd = state.favProd.filter((e) => e !== newBag);
+      } else state.favProd = state.favProd;
     },
-    SearchProducts:(state, action) => {
-     state.copyallProducts= state.copyallProducts.filter(e=> e.name.includes(action.payload)===true).slice(0,10)
-    }
+    SearchProducts: (state, action) => {
+      state.copyallProducts = state.copyallProducts
+        .filter((e) => e.name.includes(action.payload) === true)
+        .slice(0, 10);
+    },
   },
 });
 
@@ -43,7 +42,7 @@ export const dataSlice = createSlice({
 
 export const asyncallProducts = () => {
   return async function (dispatch) {
-    return dispatch(allProducts({jsonCafe}));
+    return dispatch(allProducts({ jsonCafe }));
   };
 };
 
@@ -57,20 +56,15 @@ export const asyncCancelFav = (pedido) => {
     return dispatch(cancelBagProducts(pedido));
   };
 };
-export const asyncSearchBar = (string)=>{
+export const asyncSearchBar = (string) => {
   return async function (dispatch) {
     return dispatch(SearchProducts(string));
   };
-}
+};
 
 //----------------------------------------------------------------------------------------------------------------
 
-export const {
-  allProducts,
-  favProducts,
-  cancelBagProducts,
-  SearchProducts
-  
-} = dataSlice.actions;
+export const { allProducts, favProducts, cancelBagProducts, SearchProducts } =
+  dataSlice.actions;
 
 export default dataSlice.reducer;
