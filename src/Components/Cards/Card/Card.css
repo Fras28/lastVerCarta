@@ -13,8 +13,8 @@
   text-align: left;
   margin-bottom: 0;
   margin-top: 0rem;
-  font-size: 0.7rem;
-  text-align: center;
+  font-size: 14px;
+  text-align: left;
 }
 .rightInfo {
   color: black;
@@ -31,20 +31,52 @@
 
 
 .btnPlus {
-width: 93px;
-height: 44px;
-border-radius: 24px;
-border: solid black 1px;
-}
-
-.btnPlus:active {
- background-color: darkgreen;
+  width: 93px;
+  height: 44px;
+  border-radius: 24px;
+  border: solid black 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   }
-
-.leftInfo{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 4px;
-}
+  
+  .btnPlus:active {
+   background-color: darkgreen;
+    }
+  
+  .leftInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 4px;
+    align-items: flex-start;
+  }
+  .masMenos{
+    display: flex;
+    border-radius: 16px;
+  overflow: hidden;
+  align-items: center;
+  width: 93px;
+  height: 44px;
+  
+  border-radius: 24px;
+  background-color: #577377;
+  }
+  .masMenos>button{
+    border: none;
+    background-color: transparent;
+    width: 93px;
+    height: 44px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  
+  }
+  .cuantiti{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+  }

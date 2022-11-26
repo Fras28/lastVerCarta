@@ -7,7 +7,7 @@ import { Foot } from './Components/Footer/Footer.jsx';
 import { Comidas } from './Components/Comidas/Comidas';
 import { Bag } from './Components/myBag/myBag.jsx';
 import { MyFoot } from './Components/myFoot/MyFooter.jsx';
-
+import  { VerPedido } from "./Components/BtnBag/BtnBag"
 
 function App() {
 
@@ -19,6 +19,7 @@ function App() {
           <Route exact path="/:id/Comidas" component={Comidas}/>
           <Route exact path="/:id/Bag" component={Bag}/>
 </Switch>
+<VerPedido/>
   <Foot/>
   <MyFoot/>
     </div>
