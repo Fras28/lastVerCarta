@@ -1,7 +1,7 @@
 import React from "react";
+import {Card} from "../../Cards/Card/Card"
 
 
-import { CardBag } from "../CardB/CardB";
 
 import "./CardsB.css";
 
@@ -12,12 +12,37 @@ export const CardsBag = ({ products }) => {
   return (
     <div className="cartaB">
       <div className="montoTotal">
-        <span className="aPagar">Total :${total} </span>
+      <svg
+          width="59"
+          height="2"
+          viewBox="0 0 59 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M59 0.999995L0 1" stroke="#E88A23" />
+        </svg><span className="aPagar">Total :${total} </span>   <svg
+          width="59"
+          height="2"
+          viewBox="0 0 59 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M59 0.999995L0 1" stroke="#E88A23" />
+        </svg>
       </div>
       <div className="rowsCardBag">
         {products?.map((e) => (
-          <CardBag producto={e} />
-        ))}
+          <Card producto={e} />
+        )).sort(function (a, b) {
+          if (a.name > b.name) {
+            return 1;
+          }
+          if (a.name < b.name) {
+            return -1;
+          }
+          return 0;
+        })
+        }
       </div>
     </div>
   );

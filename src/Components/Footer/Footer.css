@@ -1,18 +1,15 @@
 .footy{
-padding-bottom: 5%;
-margin-bottom: -1px;
-background-image: url(https://img.freepik.com/vector-premium/marco-hojas-acuarela-pintada-mano_158232-354.jpg);
+margin: 16px 0 16px 0
+
 } 
 .links{
     margin-left: .5rem;
     margin-right: .5rem; 
 }
 
-.linkss{
-    padding-top: 1rem;
-}
+
 .redes{
-    fill:#18A59D;
+    fill:#E88A23;
 }
 .contact{
     font-family: 'Bebas Neue', cursive;

@@ -13,8 +13,8 @@
   text-align: left;
   margin-bottom: 0;
   margin-top: 0rem;
-  font-size: 0.7rem;
-  text-align: center;
+  font-size: 14px;
+  text-align: left;
 }
 .rightInfo {
   color: black;
@@ -24,18 +24,74 @@
   padding-right: 0.5rem;
   padding-top: 1rem;
   text-align: center;
-
+  display: flex;
+  gap: 0.5rem;
 }
-
-
 
 .btnPlus {
-  background-color: transparent;
-  border: none;
-  padding-top: 0;
-  padding-bottom: 0;
+  width: 93px;
+  height: 44px;
+  border-radius: 24px;
+  border: solid black 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
-.rightInfo{
-    display: flex;
-    gap: .5rem;
+
+.btnPlus:active {
+  background-color: darkgreen;
+}
+
+.leftInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  align-items: flex-start;
+}
+.masMenos {
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  align-items: center;
+  width: 93px;
+  height: 44px;
+
+  border-radius: 24px;
+  background-color: #577377;
+}
+.masMenos > button {
+  border: none;
+  background-color: transparent;
+  width: 93px;
+  height: 44px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.cuantiti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: white;
+  padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  border-radius: 100%;
+}
+
+.contCard {
+  align-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-left: 0.3rem;
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 25%);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.price{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  color:#d47618;
 }

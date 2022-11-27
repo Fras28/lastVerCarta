@@ -1,35 +1,6 @@
 .Mfooty{
-padding-bottom: 5%;
-display: flex;
-margin-top: 0;
+  
+    width: 100%;
+    margin: 50px 0 0 0;
 } 
 
-.redes{
-    fill:#18A59D;
-}
-.Mcontact{
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Sono', sans-serif;
-    font-size: .6rem;
-
-    margin-bottom: 0;
-    margin-top: .5rem;
-}
-.McontactT{
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Sono', sans-serif;
-    font-size: .6rem;
-
-    margin-bottom: 0;
-    margin-top: .5rem;
-    margin-right: .5rem;
-}
-.linkC:hover .redes{
-    fill:#fbae61;
-}
-
-.myLinkss{
-    display: flex;
-    margin: auto;
-
-}

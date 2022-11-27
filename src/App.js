@@ -7,10 +7,10 @@ import { Foot } from './Components/Footer/Footer.jsx';
 import { Comidas } from './Components/Comidas/Comidas';
 import { Bag } from './Components/myBag/myBag.jsx';
 import { MyFoot } from './Components/myFoot/MyFooter.jsx';
-
+import  { VerPedido } from "./Components/BtnBag/BtnBag"
+import { useParams } from 'react-router';
 
 function App() {
-
   return (
     <div className="App">
 <Switch>

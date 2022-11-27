@@ -1,48 +1,72 @@
-.titleSection{
-font-size: 2rem;
-color: #18a59d;
+.titleSection {
+  font-size: 20px;
+  color: #d47618;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  margin-left: 16px;
 }
-.cafeBg{
-    border-radius: 20px;
+.cafeBg {
+  border-radius: 20px;
+}
+.conteinerLC {
+  /* height: 70vh; */
+  margin-top: 0.5rem;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+}
+.imgsTit {
+  object-fit: cover;
+  object-position: center;
+  border: double 2px #18a59d;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.conteinerLB2 > img {
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 24px;
+}
+.containerL {
+  margin-top: 100px;
+}
+.sectioner {
+  white-space: pre;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0.3rem;
+  position: sticky;
+  top: 79.5px;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.sectioner > a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border-radius: 16px;
+  margin-left: 8px;
+  border: 1px solid #000000;
+  border-radius: 24px;
+  text-decoration: none;
+  color: black;
+  padding: 12px 24px;
+  background-color: white;
+  margin-top: .3rem;
+}
+.sectioner > a:active {
+  background-color: #18a59d;
+}
+/* display: flex;
 
-}
-.conteinerLC{
-    /* height: 70vh; */
-    margin-top: 0.5rem;
-    display: flex;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5%;
-    border: double #18a59d;
-    background-image: linear-gradient(
-      -45deg,
-      #ffde63 0%,
-      #f7dc7a 25%,
-      #ffde63 51%,
-      #f7dc7a 100%
-    );
-    animation: AnimateBG 5s ease infinite;
-  }
-  
-  @keyframes AnimateBG {
-    0% {
-      background-position: 0% 25%;
-    }
-    25% {
-      background-position: 25% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  .imgsTit{
-    object-fit: cover;
-    object-position: center;
-    border: double 2px #18a59d;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
+width: 84px;
+height: 44px;
+
+border: 1px solid #577377;
+border-radius: 24px; */
