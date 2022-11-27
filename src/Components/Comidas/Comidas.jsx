@@ -3,9 +3,13 @@ import { Cards } from "../Cards/Cards.jsx";
 import "./Comidas.css";
 import { jsonCafe } from "../json";
 import { Nav } from "../Nav/Nav.jsx";
+import { VerPedido } from "../BtnBag/BtnBag.jsx";
 
 export const Comidas = (id) => {
+  const mesa = id.match.url.slice(1,3)
+  console.log(id.match.url.slice(1,3), "buscando ideeee")
 
+  
   const Cafex = jsonCafe.filter((e) => e.section === "PASTELERÍA");
   const CafeEspecial = jsonCafe.filter((e) => e.section === "TORTAS");
   const Infusionesx = jsonCafe.filter((e) => e.section === "TARTAS");
@@ -15,7 +19,7 @@ export const Comidas = (id) => {
 
   return (
     <div className="containerL">
-     <Nav id={id.match.params.id} />
+     <Nav id={mesa} />
   <div  className="conteinerLC">
     <div className="conteinerLB2">
 
@@ -27,7 +31,7 @@ export const Comidas = (id) => {
       <Cards products={Desayunox} />
         </div>
   </div>
-
+  <VerPedido id={mesa} />
     </div>
   );
 };
