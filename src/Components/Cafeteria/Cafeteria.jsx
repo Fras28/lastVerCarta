@@ -4,10 +4,13 @@ import "./Cafeteria.css";
 import { Nav } from "../Nav/Nav.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { asyncallProducts } from "../redux/slice.jsx";
+import { VerPedido } from "../BtnBag/BtnBag.jsx";
+import { useParams } from "react-router";
 
 
 export const Cafeteria = (id) => {
-
+const mesa = id.match.url.slice(1,3)
+  console.log(id.match.url.slice(1,3), "buscando ideeee")
 
   let dispatch = useDispatch();
 
@@ -26,7 +29,7 @@ export const Cafeteria = (id) => {
 
   return (
     <div className="containerL">
-      <Nav id={id.match.params.id} />
+      <Nav  id={mesa}/>
       <div className="sectioner">
         <a href="#1">Cafe</a>
         <a href="#2">Cafe Especial</a>
@@ -55,6 +58,7 @@ export const Cafeteria = (id) => {
           <Cards products={Desayunox} />
         </div>
       </div>
+      <VerPedido id={mesa} />
     </div>
   );
 };

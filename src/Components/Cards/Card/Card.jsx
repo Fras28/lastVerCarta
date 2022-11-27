@@ -28,7 +28,7 @@ export const Card = ({ producto }) => {
   };
 
   let cancelFav = function cancelBagArticle(e) {
-    dispatch(asyncCancelFav(producto));
+    dispatch(asyncCancelFav(producto.name));
   };
 
   return (

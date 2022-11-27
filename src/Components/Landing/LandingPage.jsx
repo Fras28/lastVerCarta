@@ -6,9 +6,10 @@ import comidas from "../assets/comidas.jpg";
 import cafPast from "../assets/cafPast.jpg";
 import bebidas from "../assets/bebidas.jpg";
 import menuDia from "../assets/menuDD.jpg";
+import { VerPedido } from "../BtnBag/BtnBag";
 
 export default function LandingPage(url) {
-  console.log(url.location.pathname);
+
   if (url.location.pathname === "/") {
     url.location.pathname = "/sinMesa";
     console.log(url.location.pathname);
@@ -109,6 +110,7 @@ export default function LandingPage(url) {
           <path d="M59 0.999995L0 1" stroke="#E88A23" />
         </svg>
       </div>
+      <VerPedido id={url.location.pathname.slice(1,3)}/>
     </div>
   );
 }

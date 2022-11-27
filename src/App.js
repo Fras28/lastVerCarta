@@ -8,9 +8,9 @@ import { Comidas } from './Components/Comidas/Comidas';
 import { Bag } from './Components/myBag/myBag.jsx';
 import { MyFoot } from './Components/myFoot/MyFooter.jsx';
 import  { VerPedido } from "./Components/BtnBag/BtnBag"
+import { useParams } from 'react-router';
 
 function App() {
-
   return (
     <div className="App">
 <Switch>
@@ -19,7 +19,6 @@ function App() {
           <Route exact path="/:id/Comidas" component={Comidas}/>
           <Route exact path="/:id/Bag" component={Bag}/>
 </Switch>
-<VerPedido/>
   <Foot/>
   <MyFoot/>
     </div>

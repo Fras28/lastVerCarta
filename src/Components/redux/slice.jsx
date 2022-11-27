@@ -21,13 +21,13 @@ export const dataSlice = createSlice({
       state.favProd = [...state.favProd, action.payload];
     },
     cancelBagProducts: (state, action) => {
-      const indexProd = state.favProd.indexOf(action.payload);
+      const indexProd = state.favProd.map(object => object.name).indexOf(action.payload);
       console.log(indexProd);
       if (indexProd !== "-1") {
-        const newBag = state.favProd.splice(indexProd, 1);
-        state.favProd = state.favProd.filter((e) => e !== newBag);
-      } else state.favProd = state.favProd;
-    },
+        const newBag = state.favProd.splice(indexProd,1)
+        state.favProd = state.favProd.filter(e => e !== newBag)
+      } 
+     },
     SearchProducts: (state, action) => {
       state.copyallProducts = state.copyallProducts
         .filter((e) => e.name.includes(action.payload) === true)

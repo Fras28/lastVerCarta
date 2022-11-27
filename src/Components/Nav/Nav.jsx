@@ -11,7 +11,9 @@ export const Nav = (id, url) => {
   const volver = ()=>{
     window.history.back()
 }
-  console.log(url);
+
+  console.log(url, "todo el url");
+  console.log(id, "aca esta el id")
   const lola = useParams()
   console.log(lola, "acaaaaaaaaaaaaaaaaaaaa")
 
