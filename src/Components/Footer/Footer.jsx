@@ -17,7 +17,7 @@ export const Foot = () => {
 
         <a
           className="links"
-          href="https://www.instagram.com/bastardocoffee/"
+          href="https://www.instagram.com"
           Target="_blank"
         >
           <svg
