@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import {Card} from "../../Cards/Card/Card"
 
 
@@ -6,7 +7,8 @@ import {Card} from "../../Cards/Card/Card"
 import "./CardsB.css";
 
 export const CardsBag = ({ products }) => {
-  const valores = products.map((e) => parseInt(e.price, 10));
+  let { favProd } = useSelector((state) => state.alldata);
+  const valores = favProd.map((e) => parseInt(e.price, 10));
   let total = valores.reduce((a, b) => a + b, 0);
 
   return (
@@ -33,19 +35,10 @@ export const CardsBag = ({ products }) => {
       <div className="rowsCardBag">
         {products?.map((e) => (
           <Card producto={e} />
-        )).sort(function (a, b) {
-          if (a.name > b.name) {
-            return 1;
-          }
-          if (a.name < b.name) {
-            return -1;
-          }
-          return 0;
-        })
-        }
+        ))}
       </div>
     </div>
   );
 };
 
-// {products?.map((e)=><Card  nombre={e.name} detalle={e.detail} precio={e.price}/> )}
+

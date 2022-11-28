@@ -37,7 +37,7 @@ let result = favProd.filter((item,index)=>{
       <div className="contBag">
         <CardsBag products={result} />
       </div>
-      {id.match.params.id < 0 || id.match.params.id > 99  || id.match.params.id === "u" || id.match.params.id === "s"? (
+      {id.match.params.id < 0 || id.match.params.id > 99  || id.match.params.id === "un" || id.match.params.id === "si"? (
         <p className="textNoMesa">
           <svg
             className="warning"
