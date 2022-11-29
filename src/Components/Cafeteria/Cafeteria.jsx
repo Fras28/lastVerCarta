@@ -39,26 +39,46 @@ const mesa = id.match.url.slice(1,3)
         <a href="#6">Desayunos</a>
       </div>
       <div className="conteinerLC">
-        <div className="conteinerLB2">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0613/6342/1411/files/a_900x900.png?v=1669254768"
-            alt="promo"
-          />
-          <div id="1"></div>
-          <Cards products={Cafex} />
-          <div id="2"></div>
-          <Cards products={CafeEspecial} />
-          <div id="3"></div>
-          <Cards products={Infusionesx} />
-          <div id="4"></div>
-          <Cards products={ColdBrew} />
-          <div id="5"></div>
-          <Cards products={CafeFrio} />
-          <div id="6"></div>
-          <Cards products={Desayunox} />
-        </div>
+      <div className="conteinerLB2">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0613/6342/1411/files/a_900x900.png?v=1669254768"
+          alt="promo"
+          id="1"
+        />
+        <Cards products={Cafex} />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0613/6342/1411/files/a_900x900.png?v=1669254768"
+          alt="promo"
+          id="2"
+        />
+        <Cards products={CafeEspecial} />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0613/6342/1411/files/a_900x900.png?v=1669254768"
+          alt="promo"
+          id="3"
+        />
+        <Cards products={Infusionesx} />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0613/6342/1411/files/a_900x900.png?v=1669254768"
+          alt="promo"
+          id="4"
+        />
+        <Cards products={ColdBrew} />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0613/6342/1411/files/a_900x900.png?v=1669254768"
+          alt="promo"
+          id="5"
+        />
+        <Cards products={CafeFrio} />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0613/6342/1411/files/a_900x900.png?v=1669254768"
+          alt="promo"
+          id="6"
+        />
+        <Cards products={Desayunox} />
       </div>
-      <VerPedido id={mesa} />
     </div>
+<VerPedido id={mesa} />
+  </div>
   );
 };
