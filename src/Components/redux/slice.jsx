@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 
 import { jsonCafe } from "../json";
 
@@ -61,6 +62,18 @@ export const asyncSearchBar = (string) => {
     return dispatch(SearchProducts(string));
   };
 };
+export const asyncOrder = (pedido)=>{
+console.log(pedido, "este es el pedido slice")
+  return async function ( dispatch ){
+    try{
+      await axios.post(`https://ecommerce-demo.onrender.com/addP`,pedido);
+        return dispatch()
+      console.log("posteado correctamente, sliceee")
+    }catch(error){
+      console.log(error, "from Order")
+    }
+  }
+}
 
 //----------------------------------------------------------------------------------------------------------------
 
