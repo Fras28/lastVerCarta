@@ -18,9 +18,17 @@ h1{
   background-color: white;
 
 }
-.nav> a{
-margin-top: 16px;
-margin-left: 23%;
- 
-}
+
   /*============= Search bar ==========*/
+.back{
+  color: black;
+  margin-left: 0;
+  margin-top: 10px;
+}
+.back > svg{
+  margin-bottom: -2.5px;
+}
+.morton{
+  margin-left: 25%;
+  margin-top: 20px;
+}

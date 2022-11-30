@@ -1,21 +1,20 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Nav.css";
-
+import { Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { asyncSearchBar} from "../redux/slice";
+import { asyncSearchBar } from "../redux/slice";
 import { useParams } from "react-router";
 
-
 export const Nav = (id, url) => {
-  const volver = ()=>{
-    window.history.back()
-}
+  const volver = () => {
+    window.history.back();
+  };
 
   console.log(url, "todo el url");
-  console.log(id, "aca esta el id")
-  const lola = useParams()
-  console.log(lola, "acaaaaaaaaaaaaaaaaaaaa")
+  console.log(id, "aca esta el id");
+  const lola = useParams();
+  console.log(lola, "acaaaaaaaaaaaaaaaaaaaa");
 
   const dispatch = useDispatch();
   const [search, setSearch] = useState("");
@@ -45,24 +44,71 @@ export const Nav = (id, url) => {
   return (
     <div className="contNav">
       <div className="nav">
-        <p className="back" onClick={volver}>
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.99992 12.6667L5.33325 8.00001L9.99992 3.33334"
-              stroke="#577377"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          Ir atrás
-        </p>
+        <Route path={`/${id.id}/Cafeteria`}>
+          <Link className="backLink" to={`/${id.id}`}>
+            <p className="back">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.99992 12.6667L5.33325 8.00001L9.99992 3.33334"
+                  stroke="#577377"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Ir atrás
+            </p>
+          </Link>
+        </Route>
+        <Route path={`/${id.id}/Comidas`}>
+          <Link className="backLink" to={`/${id.id}`}>
+            <p className="back" >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.99992 12.6667L5.33325 8.00001L9.99992 3.33334"
+                  stroke="#577377"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Ir atrás
+            </p>
+          </Link>
+        </Route>
+        <Route path={`/${id.id}/Bag`}>
+          <p className="back" onClick={volver}>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.99992 12.6667L5.33325 8.00001L9.99992 3.33334"
+                stroke="#577377"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Ir atrás
+          </p>
+        </Route>
+          <div className="morton">
         <NavLink to={`/${id.id}`}>
           <svg
             height="60"
@@ -78,8 +124,8 @@ export const Nav = (id, url) => {
             />
           </svg>
         </NavLink>
+          </div>
       </div>
-
     </div>
   );
 };
