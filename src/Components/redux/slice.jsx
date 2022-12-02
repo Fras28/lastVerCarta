@@ -67,8 +67,8 @@ console.log(pedido, "este es el pedido slice")
   return async function ( dispatch ){
     try{
       await axios.post(`https://ecommerce-demo.onrender.com/addP`,pedido);
-        return dispatch()
       console.log("posteado correctamente, sliceee")
+        return dispatch()
     }catch(error){
       console.log(error, "from Order")
     }
