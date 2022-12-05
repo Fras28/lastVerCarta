@@ -37,7 +37,8 @@
   overflow: auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+
   align-items: center;
   padding-bottom: 0.3rem;
   position: sticky;
@@ -71,3 +72,10 @@ height: 44px;
 
 border: 1px solid #577377;
 border-radius: 24px; */
+
+/* justify-content: flex-start; */
+@media (max-width: 600px) {
+  .sectioner{
+    justify-content: flex-start;
+  }
+}

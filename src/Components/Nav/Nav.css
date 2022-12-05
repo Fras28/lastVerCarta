@@ -17,6 +17,7 @@ h1{
   width: 100%;
   background-color: white;
   z-index: 9999;
+  justify-content: center;
 
 }
 
@@ -32,4 +33,10 @@ h1{
 .morton{
   margin-left: 25%;
   margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .nav{
+    justify-content: flex-start
+  }
 }

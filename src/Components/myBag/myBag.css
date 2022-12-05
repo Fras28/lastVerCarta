@@ -40,3 +40,17 @@
 .warning{
   margin-bottom: -5px;
 }
+.wsspTarj{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+}
+.selectP{
+  height: 1.8rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius:24px;
+  padding-top: 0.3rem;
+  text-align: center;
+}

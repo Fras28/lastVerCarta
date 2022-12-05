@@ -93,7 +93,7 @@ let result = favProd.filter((item,index)=>{
           </svg>
         </p>
       ) : (
-        <div>
+        <div className="wsspTarj">
         <select 
         className="selectP"
         onChange={metodoPago}
