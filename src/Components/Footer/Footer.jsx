@@ -3,7 +3,7 @@ import "./Footer.css";
 
 export const Foot = () => {
   return (
-    <footer className="footy">
+    <footer className="footy animate__animated  animate__zoomIn">
       <div className="linkss">
         <a
           className="links"

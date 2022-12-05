@@ -75,7 +75,7 @@ export const Nav = (id) => {
             Ir atrás
           </p>
         </Route>
-          <div className="morton">
+          <div className="morton foolishIn">
         <NavLink to={`/${id.id}`}>
           <svg
             height="60"

@@ -43,6 +43,7 @@
   position: sticky;
   top: 79.5px;
   width: 100%;
+  z-index: 9999;
 }
 ::-webkit-scrollbar {
   display: none;

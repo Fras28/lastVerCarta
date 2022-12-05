@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import "./BtnBag.css"
+import "animate.css"
 
 export const VerPedido = ({id})=>{
 console.log(id , "mesaaaa buton bag ver pedido")
@@ -11,7 +12,7 @@ console.log(id , "mesaaaa buton bag ver pedido")
     return(
         <div className="goBag">
           { favProd.length===0? <p></p>:
-          <NavLink className="btnGoBag" to={`/${id}/Bag`}>
+          <NavLink className="btnGoBag animate__animated  animate__zoomInDown" to={`/${id}/Bag`}>
              <p className="pedido">Ver pedido <b className="cantidad">{favProd.length}</b></p> 
           </NavLink>
             }

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./LandingPage.css";
-import Loguito from "../assets/casaMonteLogo.png";
+
 import comidas from "../assets/comidas.jpg";
 import cafPast from "../assets/cafPast.jpg";
 import bebidas from "../assets/bebidas.jpg";
@@ -16,8 +16,8 @@ export default function LandingPage(url) {
   }
 
   return (
-    <div>
-      <div className="naviLanding titCasa">
+    <div className="animate__animated  animate__zoomIn">
+      <div className="naviLanding titCasa ">
         <div className="logoL">
           <NavLink to={`${url.location.pathname}`}>
             <svg
@@ -58,7 +58,7 @@ export default function LandingPage(url) {
         </div>
       </div>
 
-      <div className="conteinerLB2">
+      <div className="conteinerLB2  ">
         <div className="rowsCardL">
           <NavLink
             className="navLink"
@@ -75,16 +75,16 @@ export default function LandingPage(url) {
           </NavLink>
           <NavLink className="navLink" to={`${url.location.pathname}/Comidas`}>
             <div className="titInicio">
-              <img src={comidas} />
+              <img src={comidas} alt=""/>
               <p>COMIDAS</p>
             </div>
           </NavLink>
           <div className="titInicio">
-            <img src={bebidas} />
+            <img src={bebidas}  alt=""/>
             <p>BEBIDAS</p>
           </div>
           <div className="titInicio">
-            <img src={menuDia} />
+            <img src={menuDia} alt="" />
             <p>MENU DEL DIA</p>
           </div>
         </div>
