@@ -6,13 +6,13 @@ import "./BtnBag.css"
 import "animate.css"
 
 export const VerPedido = ({id})=>{
-console.log(id , "mesaaaa buton bag ver pedido")
+
 
     let {favProd} =useSelector((state) => state.alldata);
     return(
         <div className="goBag">
           { favProd.length===0? <p></p>:
-          <NavLink className="btnGoBag animate__animated  animate__zoomInDown" to={`/${id}/Bag`}>
+          <NavLink className="btnGoBag animate__animated  animate__zoomInDown animate__faster" to={`/${id}/Bag`}>
              <p className="pedido">Ver pedido <b className="cantidad">{favProd.length}</b></p> 
           </NavLink>
             }
