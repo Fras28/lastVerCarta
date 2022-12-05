@@ -16,8 +16,8 @@ export default function LandingPage(url) {
   }
 
   return (
-    <div>
-      <div className="naviLanding titCasa">
+    <div className="animate__animated  animate__zoomIn">
+      <div className="naviLanding titCasa ">
         <div className="logoL">
           <NavLink to={`${url.location.pathname}`}>
             <svg
@@ -58,7 +58,7 @@ export default function LandingPage(url) {
         </div>
       </div>
 
-      <div className="conteinerLB2">
+      <div className="conteinerLB2  ">
         <div className="rowsCardL">
           <NavLink
             className="navLink"

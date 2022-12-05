@@ -29,7 +29,7 @@ export const Comidas = (id) => {
       <a href="#6">Tapeos</a>
     </div>
     <div className="conteinerLC">
-      <div className="conteinerLB2">
+      <div className="conteinerLB2 animate__animated  animate__zoomIn animate__faster">
         <img
           src="https://cdn.shopify.com/s/files/1/0613/6342/1411/files/a_900x900.png?v=1669254768"
           alt="promo"

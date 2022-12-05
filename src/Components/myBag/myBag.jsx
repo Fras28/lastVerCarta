@@ -51,10 +51,10 @@ let result = favProd.filter((item,index)=>{
   let total = valores.reduce((a, b) => a + b, 0);
 
   return (
-    <div className="backBag">
+    <div className="backBag   ">
       <Nav id={id.match.params.id} />
      
-      <div className="contBag">
+      <div className="contBag animate__animated   animate__rollIn animate__faster">
         <CardsBag products={result} />
       </div>
       {isNaN(id.match.params.id) === true? (

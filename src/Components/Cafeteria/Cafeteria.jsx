@@ -38,9 +38,10 @@ const mesa = id.match.url.slice(1,3)
         <a href="#5">Cafe Frio</a>
         <a href="#6">Desayunos</a>
       </div>
-      <div className="conteinerLC">
-      <div className="conteinerLB2">
+      <div className="conteinerLC ">
+      <div className="conteinerLB2 animate__animated  animate__zoomIn animate__faster">
         <img
+
           src="https://cdn.shopify.com/s/files/1/0613/6342/1411/files/a_900x900.png?v=1669254768"
           alt="promo"
           id="1"
