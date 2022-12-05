@@ -17,8 +17,7 @@ h1{
   width: 100%;
   background-color: white;
   z-index: 9999;
-  justify-content: center;
-
+  justify-content: space-evenly;
 }
 
   /*============= Search bar ==========*/
