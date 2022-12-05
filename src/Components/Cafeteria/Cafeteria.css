@@ -27,7 +27,6 @@
 .conteinerLB2 > img {
   max-width: 100%;
   object-fit: contain;
-  border-radius: 24px;
 }
 .containerL {
   margin-top: 100px;
@@ -77,5 +76,8 @@ border-radius: 24px; */
 @media (max-width: 600px) {
   .sectioner{
     justify-content: flex-start;
+  }
+  .leftInfo{
+    padding-left: 0;
   }
 }
