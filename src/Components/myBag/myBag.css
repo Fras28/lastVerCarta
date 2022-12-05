@@ -60,3 +60,9 @@
   text-align: center;
   width: 129px;
 }
+
+@media (max-width: 600px) {
+  .nav{
+    justify-content: flex-start
+  }
+}
