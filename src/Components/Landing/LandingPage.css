@@ -65,11 +65,7 @@ display:flex ;
   display: flex;
 }
 
-.titInicio:hover {
-  color: #d47618;
-  border-radius: 20%;
-  border: solid white;
-}
+
 .navLink {
   text-decoration: none;
 }
@@ -110,4 +106,16 @@ font-weight: 800;
 }
 .logoL{
 margin-top: 16px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .titInicio:hover {
+    color: #d47618;
+    border-radius: 20%;
+    border: solid white;
+  }
+  
 }
