@@ -61,6 +61,13 @@
   width: 129px;
 }
 
+.QrBag{
+  outline: double 5px #E88A23;
+  padding: .5rem;
+  border-radius: 26px;
+  margin-top: 1rem;
+}
+
 @media (max-width: 600px) {
   .nav{
     justify-content: flex-start
