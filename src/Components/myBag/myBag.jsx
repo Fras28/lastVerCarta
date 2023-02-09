@@ -9,6 +9,13 @@ import BuyItemButton from "../Mp/mp";
 
 
 export const Bag = (id) => {
+
+  const toTop = ()=>{
+    window.scrollTo(0,0);
+  }
+   toTop();
+
+
   const dispatch = useDispatch()
 console.log(id.match.params.id , "id tiene que ser solo numero sin barra")
 

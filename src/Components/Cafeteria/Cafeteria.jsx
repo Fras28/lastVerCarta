@@ -9,6 +9,12 @@ import { useParams } from "react-router";
 
 
 export const Cafeteria = (id) => {
+
+  const toTop = ()=>{
+    window.scrollTo(0,0);
+  }
+   toTop();
+   
 const mesa = id.match.url.slice(1,3)
   console.log(id.match.url.slice(1,3), "buscando ideeee")
 

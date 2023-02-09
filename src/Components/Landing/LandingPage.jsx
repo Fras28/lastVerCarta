@@ -10,6 +10,11 @@ import { VerPedido } from "../BtnBag/BtnBag";
 
 export default function LandingPage(url) {
 
+  const toTop = ()=>{
+    window.scrollTo(0,0);
+  }
+   toTop();
+
   if (url.location.pathname === "/") {
     url.location.pathname = "/sinMesa";
     console.log(url.location.pathname);

@@ -6,6 +6,11 @@ import { Nav } from "../Nav/Nav.jsx";
 import { VerPedido } from "../BtnBag/BtnBag.jsx";
 
 export const Comidas = (id) => {
+
+  const toTop = ()=>{
+    window.scrollTo(0,0);
+  }
+   toTop();
   const mesa = id.match.url.slice(1,3)
   console.log(id.match.url.slice(1,3), "buscando ideeee")
 
