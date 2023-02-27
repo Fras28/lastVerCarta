@@ -18,25 +18,49 @@ h1{
   background-color: white;
   z-index: 9999;
   justify-content: space-evenly;
+  padding-bottom: 2%;
 }
-
   /*============= Search bar ==========*/
 .back{
-  color: black;
-  margin-left: 0;
+
+  margin-left: .5rem;
   margin-top: 10px;
+  /* background-color: rgb(255, 255, 255);
+  padding: 4px 4px 4px 4px;
+  border-radius: 24px 24px 24px 24px ;
+  box-shadow: 1px 2px 1px black; */
 }
 .back > svg{
   margin-bottom: -2.5px;
-  margin-left: 20%;
+  filter: drop-shadow(8px 8px 4px black );
+  
+
 }
 .morton{
-  margin-left: 32%;
+
   margin-top: 20px;
 }
+.backLink{
+  display: none;
+}
 
+.bakBagBtn{
+  display: none;
+}
 @media (max-width: 600px) {
+  .back:hover{
+    box-shadow: 1px 2px 1px black;
+  }
   .nav{
     justify-content: flex-start
   }
+  .backLink{
+    display: block;
+
+  }
+  .morton{
+    margin-left: 28%;}
+    .bakBagBtn{
+      display: block;
+    }
 }

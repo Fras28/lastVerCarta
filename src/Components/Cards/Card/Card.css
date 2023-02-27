@@ -5,7 +5,6 @@
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
-  text-align: center;
 }
 .detProd {
   color: black;
@@ -30,13 +29,15 @@
   width: 93px;
   height: 44px;
   border-radius: 24px;
-  border: solid black 1px;
+  border: outset green 2px;
   font-family: "Montserrat", sans-serif;
+  color: green;
   font-weight: 600;
+  background-color: rgb(255, 255, 255);
 }
 
 .btnPlus:active {
-  background-color: darkgreen;
+  background-color: #E88A23;
 }
 
 .leftInfo {
@@ -53,9 +54,12 @@
   align-items: center;
   width: 93px;
   height: 44px;
-
   border-radius: 24px;
-  background-color: #577377;
+  background-color: #E88A23;
+  border: outset #E88A23 2px;
+}
+.masMenos:hover{
+    border: inset #E88A23 2px;
 }
 .masMenos > button {
   border: none;
@@ -92,5 +96,5 @@
 margin: 0;
 font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color:#d47618;
+  color:rgb(107, 48, 48);
 }

@@ -1,5 +1,5 @@
 .footy{
-margin: 16px 0 16px 0
+margin: 16px 0 16px 0;
 
 } 
 .links{
@@ -10,6 +10,9 @@ margin: 16px 0 16px 0
 
 .redes{
     fill:#E88A23;
+}
+.wap{
+    fill: #03C100;
 }
 .contact{
     font-family: 'Bebas Neue', cursive;

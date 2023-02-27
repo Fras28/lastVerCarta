@@ -1,10 +1,14 @@
 .titleSection {
   font-size: 20px;
-  color: #d47618;
+  color: black;
   font-family: "Montserrat", sans-serif;
   text-align: left;
-  margin-left: 16px;
+  padding-left: 16px;
+  background-color: rgb(255, 255, 255);
+
 }
+
+
 .cafeBg {
   border-radius: 20px;
 }
@@ -26,7 +30,10 @@
 }
 .conteinerLB2 > img {
   max-width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
+  max-height: 150px;
+
 }
 .containerL {
   margin-top: 100px;
@@ -64,6 +71,8 @@
 .sectioner > a:active {
   background-color: #18a59d;
 }
+
+
 /* display: flex;
 
 width: 84px;

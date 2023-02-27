@@ -9,3 +9,6 @@
 margin-bottom: 0;
 }
 
+.titleSection > svg {
+    margin-bottom: -7px;
+}

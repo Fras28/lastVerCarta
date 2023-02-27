@@ -36,6 +36,8 @@
 .titInicio >p{
   margin: auto;
   padding: 0 0.5rem;
+  color: black;
+
 }
 .naviLanding {
   display: flex;
@@ -53,6 +55,7 @@
   font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1rem;
+  margin-top: 16px;
 }
 .navi2 >p{
  margin:0 1rem 0 1rem
@@ -60,6 +63,7 @@
 
 .naviTit2{
 display:flex ;
+font-weight: 600;
 }
 .titCasa {
   display: flex;
@@ -102,14 +106,26 @@ font-weight: 800;
   width: 100%;
   justify-content: space-evenly;
   gap: 7px;
-  margin-bottom: 16px;
+  margin-bottom: 7px;
 }
 .logoL{
 margin-top: 16px;
 }
 
 
-
+.evImg{
+  object-fit: cover;
+  object-position: bottom;
+}
+.eventsL > .titInicio{
+  width: 86%;
+  margin: auto;
+  height: 157px;
+}
+.especial{
+  border: solid goldenrod 1px;
+  box-shadow: 0px 0px 8px goldenrod;
+}
 
 @media (max-width: 600px) {
   .titInicio:hover {
@@ -117,5 +133,4 @@ margin-top: 16px;
     border-radius: 20%;
     border: solid white;
   }
-  
 }

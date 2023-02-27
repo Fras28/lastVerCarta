@@ -7,12 +7,8 @@
         min-height: 60vh;
        display: flex;
        flex-direction: column;
-       justify-content: flex-start;
+       justify-content: center;   
 }
-.contBag{
-  margin-top: 100px;
-}
-
 .btnBack{
   outline: #c1373e double 1px;
   background-color: #295db1;
@@ -22,8 +18,8 @@
   color: white;
   padding: .3rem;
   margin-bottom: 1rem;
-
 }
+
 .btnWssp{
   border-radius: 6px;
   background-color:#03C100 ;
@@ -60,16 +56,40 @@
   text-align: center;
   width: 129px;
 }
+.backBag{
+  color: black;
+  margin-left: 0;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 0 4px 4px 0;
+  border-radius: 0 24px 24px 0;
+
+}
+.backBag>svg{
+  margin-bottom: -3px;
+} 
 
 .QrBag{
-  outline: double 5px #E88A23;
-  padding: .5rem;
-  border-radius: 26px;
-  margin-top: 1rem;
+  outline: groove #E88A23 10px;
+  border-radius: 24px;
+  padding: 1rem;
+  margin-top: 2rem;
 }
-
 @media (max-width: 600px) {
   .nav{
     justify-content: flex-start
   }
+  .btnBack{
+    outline: #c1373e double 1px;
+    background-color: #295db1;
+    border: none;
+    border-radius: 20%;
+    padding-top: 0.3rem;
+    color: white;
+    padding: .3rem;
+    margin-bottom: 1rem;
+  }
+  .contBag{
+   margin-top: 30%;
+}
 }

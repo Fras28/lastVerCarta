@@ -14,6 +14,7 @@ export const Card = ({ producto }) => {
   });
 
   let artAdd = function addArticle(e) {
+    // e.preventDefault()
     setArticles({
       ...articles,
       name: [producto.name],

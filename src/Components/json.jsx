@@ -1,904 +1,863 @@
-
-export let jsonCafe= [
-    {
-        name: "EXPRESO JARRITO",
-    
-        detail:"› EXTRACCIÓN DE 30ML",
-        price:"300",
-       section:"Cafe"
-    },
-    {
-        name: "EXPRESO DOBLE  ",
-
-        detail:"CORTADO JARRITO",
-        price:"330",
-       section:"Cafe"
-    }  ,
-    {
-        name: "CORTADO JARRITO",
-    
-        detail:"",
-        price:"300",
-       section:"Cafe"
-    }  ,
-    {
-        name: "EXPRESO DOPPIO",
-    
-        detail:"› EXTRACCIÓN DE 60ML",
-        price:"270",
-       section:"Cafe"
-    }  ,
-    {
-        name: "CHOCO EXPRESO",
-    
-        detail:"› EXPRESSO CON CHOCOLATE AMARGO",
-        price:"300",
-       section:"Cafe Especial"
-    }  ,
-    {
-        name: "MACCHIATO",
-    
-        detail:" EXPRESO CON UNA PEQUEÑA CANTIDAD DE LECHE CALIENTE Y ESPUMADA",
-        price:"520",
-       section:"Cafe Especial"
-    }  
-    ,
-    {
-        name: "CAFÉ CON LECHE",
-    
-        detail:"",
-        price:"530",
-       section:"Cafe Especial"
-    }  
-    ,
-    {
-        name: "LAGRIMA",
-    
-        detail:"",
-        price:"450",
-       section:"Cafe Especial"
-    }  
-    ,
-    {
-        name: "FLAT WHITE",
-    
-        detail:"",
-        price:"600",
-       section:"Cafe Especial"
-    }  
-    ,
-    {
-        name: "MOKA",
-    
-        detail:"",
-        price:"600",
-       section:"Cafe Especial"
-    }  
-    ,
-    {
-        name: "SUBMARINO",
-    
-        detail:"› BARRA DE CHOCOLATE AMARGO SUMERGIDA EN LECHE TEXTURIZADA A 86°.",
-        price:"600",
-       section:"Cafe Especial"
-    }  
-    ,
-    {
-        name: "CAPPUCCINO",
-    
-        detail:"› BASE DE CHOCOLATE, LECHE , MEDIDA DE CAFÉ, ESPUMA DE LECHE, CREMA, SALSA DE CHOCOLATE Y CANELA",
-        price:"600",
-       section:"Cafe Especial"
-    }  
-    ,
-    {
-        name: "WHITE CARAMEL",
-    
-        detail:"› BASE DE CARAMELO, BARRA DE CHOCOLATE BLANCO , LECHE ,  MEDIDA DE CAFÉ, CREMA Y DECORACIÓN DE CARAMELO",
-        price:"650",
-       section:"Cafe Especial"
-    }  
-    ,
-    {
-        name: "CAFÉ BASTARDO",
-    
-        detail:"› BASE DE LECHE CONDENSADA, LECHE , CAFÉ, CREMA, COCO RALLADO, CACAO.",
-        price:"600",
-       section:"Cafe Especial"
-    }  
-    ,
-    {
-        name: "TÉ EN HEBRAS",
-    
-        detail:"› ROJO, NEGRO, VERDE. ",
-        price:"500",
-       section:"Infusiones"
-    }  
-    ,
-    {
-        name: "TÉ CON LECHE",
-    
-        detail:"",
-        price:"500",
-       section:"Infusiones"
-    }  
-    ,
-    {
-        name: "TONIC",
-    
-        detail:"› COLD BREW, AGUA TÓNICA, HIELO, RODAJA DE LIMON. ",
-        price:"550",
-       section:"Cold Brew"
-    }  
-    ,
-    {
-        name: "ON THE ROCKS",
-    
-        detail:"› COLD BREW, HIELO, RODAJA DE NARANJA",
-        price:"550",
-       section:"Cold Brew"
-    }   
-    ,
-    {
-        name: "AFOGATTO",
-    
-        detail:"› CAFÉ FRÍO, HIELO, LECHE DE ALMENDRAS, BOCHA DE HELADO CREMA AMERICANA",
-        price:"600",
-       section:"Cafe Frio"
-    }  ,
-    {
-        name: "ELIOT NESS",
-    
-        detail:"› MEDIDA DE ESPRESSO, HIELO, LECHE, CREMA DE LECHE",
-        price:"600",
-       section:"Cafe Frio"
-    }  
-    ,   
-     {
-        name: "COLD CARAMEL",
-    
-        detail:"› CANELA, LECHE, HIELO, ESPRESSO CREMA, TOPING CARAMEL",
-        price:"600",
-       section:"Cafe Frio"
-    }  ,
-    {
-        name: "CAFÉ CON LECHE Y MEDIALUNAS",
-    
-        detail:"› CAFÉ CON LECHE Y 2 MEDIALUNAS",
-        price:"700",
-       section:"DESAYUNO"
-    }  ,
-    {
-        name: "BOWL DE CEREALES",
-    
-        detail:"› YOGURT NATURAL, GRANOLA CASERA, FRUTAS DE ESTACIÓN, MIEL",
-        price:"800",
-       section:"DESAYUNO"
-    }  
-    ,   
-     {
-        name: "DESAYUNO AMERICANO",
-    
-        detail:"› PAN DE MOLDE GRANDE, CHEDDAR, PANCETA CROCANTE Y HUEVO A LA PLANCHA, ACOMPAÑADO CON UN JUGO NATURAL DE NARANJA EXPRIMIDA",
-        price:"950",
-       section:"DESAYUNO"
-    } ,
-    {
-        name: "ROLLS",
-    
-        detail:"› CANELA, ARÁNDANOS Ó CHOCOLATE",
-        price:"420",
-       section:"PASTELERÍA"
-    }  ,
-    {
-        name: "COOKIES",
-    
-        detail:"› CHOCOLATE | CHOCOLATE BLANCO | NUECES",
-        price:"500",
-       section:"PASTELERÍA"
-    }  
-    ,   
-     {
-        name: "ALFAJORES",
-    
-        detail:"› CHOCOLATE | CHOCOLATE BLANCO | NUECES",
-        price:"500",
-       section:"PASTELERÍA"
-    }   ,
-    {
-        name: "BAGELS SALMON",
-    
-        detail:"› SALMÓN GRAVLAX, QUESO CREMA, PALTA, CHERRY",
-        price:"900",
-       section:"PASTELERÍA"
-    }  ,
-    {
-        name: "BAGELS NUTELLA",
-    
-        detail:"› NUTELLA, FRUTAS",
-        price:"800",
-       section:"PASTELERÍA"
-    }  
-    ,   
-     {
-        name: "TOSTADAS",
-    
-        detail:"› MANTECA, QUESO CREMA, MERMELADAS CASERAS",
-        price:"550",
-       section:"PASTELERÍA"
-    }   ,
-    {
-        name: "MEDIALUNA",
-    
-        detail:"› DULCES Y SALADAS",
-        price:"120",
-       section:"PASTELERÍA"
-    }  ,
-    {
-        name: "MEDIALUNA RELLENA",
-    
-        detail:"› RELLENA DE JAMÓN Y QUESO",
-        price:"200",
-       section:"PASTELERÍA"
-    }  
-    ,   
-     {
-        name: "BUDIN BANANA Ó CHOCOLATE",
-    
-        detail:"",
-        price:"400",
-       section:"TORTAS"
-    }   ,
-    {
-        name: "PORCIÓN DE TORTA",
-    
-        detail:"› INDIVIDUAL",
-        price:"700",
-       section:"TORTAS"
-    }  ,
-    {
-        name: "BROWNIE ICE CREAM",
-    
-        detail:"› CON HELADO",
-        price:"800",
-       section:"TORTAS"
-    }  
-    ,   
-     {
-        name: "BROWNIE",
-    
-        detail:"",
-        price:"500",
-       section:"TORTAS"
-    }   ,
-    {
-        name: "CHOCOTORTA",
-    
-        detail:"",
-        price:"700",
-       section:"TORTAS"
-    }  ,
-    {
-        name: "CALABAZA",
-    
-        detail:"› QUESO Y CALABAZA ASADA",
-        price:"850",
-       section:"TARTAS"
-    }  
-    ,   
-     {
-        name: "POLLO",
-    
-        detail:"› POLLO, VERDURAS, MOSTAZA",
-        price:"850",
-       section:"TARTAS"
-    }   ,
-    {
-        name: "IBÉRICA",
-    
-        detail:"› MUZZA, JAMÓN CRUDO, MORRÓN EN CONSERVA",
-        price:"1400",
-       section:"PIZZAS"
-    }  ,
-    {
-        name: "VEGGIE",
-    
-        detail:"› MUZZA, VEGETALES A LA PLANCHA, PORTOBELLOS",
-        price:"1300",
-       section:"PIZZAS"
-    }  
-    ,   
-     {
-        name: "ITALY",
-    
-        detail:"› MUZZA, CHERRY, ORÉGANO",
-        price:"1400",
-       section:"PIZZAS"
-    }  ,
-    {
-        name: "BUFFALO",
-    
-        detail:"› MUZZA, POLLO, BARBACOA CASERA",
-        price:"1400",
-       section:"PIZZAS"
-    }  
-    ,   
-     {
-        name: "BASTARDA",
-    
-        detail:"› DOBLE CARNE, DOBLE CHEDDAR, PANCETA, BARBACOA CASERA SALE ACOMPAÑADA CON PAPAS",
-        price:"1400",
-       section:"BURGER"
-    }  ,
-    {
-        name: "OKLAHOMA",
-    
-        detail:"› DOBLE CARNE, CEBOLLA SMASH, QUESO TYBO, CHEDDAR SALE ACOMPAÑADA CON PAPAS",
-        price:"1400",
-       section:"BURGER"
-    }  
-    ,   
-     {
-        name: "VEGGIE",
-    
-        detail:"› MEDALLÓN DE LENTEJAS, TOMATE, LECHUGA, QUESO TYBO, MORRÓN - SALE ACOMPAÑADA CON PAPAS",
-        price:"1300",
-       section:"BURGER"
-    }  ,
-    {
-        name: "CLÁSICA",
-    
-        detail:"› DOBLE CARNE, TYBO, JAMÓN, LECHUGA, TOMATE SALE ACOMPAÑADA CON PAPAS",
-        price:"1400",
-       section:"BURGER"
-    }  
-    ,   
-     {
-        name: "PAPAS VANS",
-    
-        detail:"› BONDIOLA DESMENUZADA, CREMA DE ROQUEFORT, PEREJIL",
-        price:"1100",
-       section:"TAPEOS"
-    }  ,
-    {
-        name: "PAPAS BARDO",
-    
-        detail:"› CHEDDAR, PANCETA CROCANTE, VERDEO FRITO, ALIOLI DE AJOS ASADOS",
-        price:"1000",
-       section:"TAPEOS"
-    }  
-    ,   
-     {
-        name: "PAPAS FRUGIS",
-    
-        detail:"› SALSA DE TOMATE CASERA, MUZZA, ALBAHACA",
-        price:"980",
-       section:"TAPEOS"
-    }  ,
-    {
-        name: "CROQUETAS DE ACELGA",
-    
-        detail:"› CON ALIOLI DE AJOS ASADOS, LIMÓN",
-        price:"950",
-       section:"TAPEOS"
-    }  
-    ,   
-     {
-        name: "RABAS",
-    
-        detail:"› CON LIMÓN Y ALIOLI",
-        price:"1300",
-       section:"TAPEOS"
-    }  ,
-    {
-        name: "PROVOLETA",
-    
-        detail:"› CHERRY, JAMÓN CRUDO, CEBOLLAS ASADAS",
-        price:"1100",
-       section:"TAPEOS"
-    }  
-    ,   
-     {
-        name: "QUESADILLA CON HONGOS",
-    
-        detail:"",
-        price:"1000",
-       section:"TAPEOS"
-    }  ,
-    {
-        name: "BASTONES DE MUZZARELLA",
-    
-        detail:"› BASTONES DE QUESO EMPANADOS",
-        price:"1000",
-       section:"TAPEOS"
-    }  
-    ,   
-     {
-        name: "QUESADILLA CAPRESSE",
-    
-        detail:"",
-        price:"1100",
-       section:"TAPEOS"
-    }  ,
-    {
-        name: "QUESADILLA CON POLLO Y GUACAMOLE",
-    
-        detail:"",
-        price:"1100",
-       section:"TAPEOS"
-    }  
-    ,   
-     {
-        name: "BIFE DE COSTILLA",
-    
-        detail:"›350GR DE BIFE DE COSTILLA- PAPAS CUÑA DOBLE COCCION-CHIMI CASERO- ALIOLI DE PIMIENTOS-CEBOLLA ASADA ",
-        price:"1300",
-       section:"PLATOS PRINCIPALES"
-    }  ,
-    {
-        name: "CABUTIA RELLENA DE MATAMBRE",
-    
-        detail:"› QUESO MUZARELLA Y MATAMBRITO TIERNIZADO",
-        price:"1400",
-       section:"PLATOS PRINCIPALES"
-    }  
-    ,   
-     {
-        name: "CABUTIA RELLENA DE VERDURA",
-    
-        detail:"› QUESO MUZARELLA Y VERDURAS ASADAS",
-        price:"1300",
-       section:"PLATOS PRINCIPALES"
-    }  ,
-    {
-        name: "MILANESA",
-    
-        detail:"› CARNE | POLLO | BERENJENA ASADA - SALE SOLA O SUIZA TODAS SALEN CON PAPAS",
-        price:"1350",
-       section:"PLATOS PRINCIPALES"
-    }  
-    ,   
-     {
-        name: "AGNOLOTTIS(pastas)",
-    
-        detail:"› POLLO Y VERDEO.(salsas:crema de hongos o salsa filetto)",
-        price:"1300",
-       section:"PLATOS PRINCIPALES"
-    }  ,
-    {
-        name: "FAGOTTINI(pastas)",
-    
-        detail:"› BLEND DE CARNES | CALABAZA Y VERDEO.(salsas:crema de hongos o salsa filetto)",
-        price:"1300",
-       section:"PLATOS PRINCIPALES"
-    }  
-    ,   
-     {
-        name: "PRODUCTO",
-    
-        detail:"",
-        price:"9999",
-       section:"COCTELERIA CLASSIC"
-    } ,   
-    {
-       name: "PRODUCTO",
-      //  photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-       detail:"",
-       price:"9999",
-      section:"COCTELERIA CLASSIC"
-   }  ,   
-   {
-      name: "PRODUCTO",
-      // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-      detail:"",
-      price:"9999",
-     section:"COCTELERIA CLASSIC"
-  }  ,   
+// eslint-disable-next-line no-sparse-arrays
+export let jsonCafe = [
   {
-     name: "PRODUCTO",
+    name: "Espresso",
+    detail: "JARRITO",
+    price: "500",
+    section: "Cafe",
+  },
+  {
+    name: "Espresso mediano",
+    detail: "",
+    price: "600",
+    section: "Cafe",
+  },
+  ,
+  {
+    name: "Cafe con leche",
+    detail: "",
+    price: "750",
+    section: "Cafe",
+  },
 
-     detail:"",
-     price:"9999",
-    section:"COCTELERIA CLASSIC"
- }  ,   
- {
-    name: "PRODUCTO",
-   //  photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-    detail:"",
-    price:"9999",
-   section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"FRAPPÉS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"FRAPPÉS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"FRAPPÉS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"FRAPPÉS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"FRAPPÉS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"BEBIDAS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"BEBIDAS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"BEBIDAS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"BEBIDAS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"BEBIDAS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"BEBIDAS"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"BEBIDAS"
-}  ,         
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"VINOS"
-}  ,  
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"VINOS"
-}  ,{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"VINOS"
-}  , 
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}    ,      
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}  ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}   ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}   ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}   ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}   ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}   ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA CLASSIC"
-}   ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA ESPECIAL"
-}    ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA ESPECIAL"
-}    ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA ESPECIAL"
-}    ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA ESPECIAL"
-}    ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA ESPECIAL"
-}    ,   
-{
-   name: "PRODUCTO",
-   // photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
-   detail:"",
-   price:"9999",
-  section:"COCTELERIA ESPECIAL"
-}  
+  {
+    name: "Frapuchino",
 
+    detail: "",
+    price: "950",
+    section: "Cafe",
+  },
+  {
+    name: "Capuccino",
 
-]
+    detail: "",
+    price: "850",
+    section: "Cafe",
+  },
+  {
+    name: "Submarino ",
+
+    detail: "Dosis de leche espumada a 90° con barra de chocolate amargo ",
+    price: "850",
+    section: "Cafe",
+  },
+  {
+    name: "Té",
+
+    detail: "› Consultar por opciones",
+    price: "450",
+    section: "Cafe",
+  }
+  ,
+  {
+    name: "Medialuna",
+
+    detail: "›Dulce o Salada",
+    price: "200",
+    section: "Desayuno/Merienda",
+  },
+  {
+    name: "Medialuna con jamon y queso",
+
+    detail: "›",
+    price: "300",
+    section: "Desayuno/Merienda",
+  }
+  ,
+  {
+    name: "Tostadas x4",
+
+    detail: "› Pan comun o integral - vienen con manteca y mermelada ",
+    price: "900",
+    section: "Desayuno/Merienda",
+  }
+  ,
+  {
+    name: "Brusquetas de palta",
+
+    detail: "› Huevo, panceta y queso crema",
+    price: "800",
+    section: "Desayuno/Merienda",
+  }
+  ,
+  {
+    name: "Brusqueta capresse",
+
+    detail: "›",
+    price: "700",
+    section: "Desayuno/Merienda",
+  }
+  ,
+  {
+    name: "Tostado Primavera",
+
+    detail: "›",
+    price: "1600",
+    section: "Desayuno/Merienda"
+  }
+ 
+  ,
+  {
+    name: "Tostado jamon y queso",
+
+    detail: "›",
+    price: "1300",
+    section: "TAPEOS",
+  }
+  ,
+  {
+    name: "Tostado Primavera",
+
+    detail: "›",
+    price: "1600",
+    section: "TAPEOS"
+  }
+  ,
+  {
+    name: "Yogurt con granola y frutas de estacion",
+
+    detail: "›",
+    price: "750",
+    section: "Desayuno/Merienda",
+  }
+  ,
+  {
+    name: "Tarta de coco",
+
+    detail: "› Porcion",
+    price: "750",
+    section: "DELICATESSEN",
+  }
+  ,
+  {
+    name: "Torta Cabsha",
+
+    detail: "›Porcion",
+    price: "750",
+    section: "DELICATESSEN",
+  }
+  ,
+  {
+    name: "Crumblee de manzana",
+
+    detail: "›Porcion",
+    price: "800",
+    section: "DELICATESSEN",
+  }
+  ,
+  {
+    name: "Flan casero",
+
+    detail: "›",
+    price: "900",
+    section: "POSTRES",
+  }
+  ,
+  {
+    name: "Bochas de helado",
+
+    detail: "›",
+    price: "900",
+    section: "POSTRES",
+  }
+  ,
+  {
+    name: "Frutillas con crema",
+
+    detail: "›",
+    price: "1200",
+    section: "POSTRES",
+  }
+  ,
+  {
+    name: "Ensalada de frutas con Helado de americana",
+
+    detail: "›",
+    price: "1100",
+    section: "POSTRES",
+  }
+  ,
+  {
+    name: "Chocotorta",
+
+    detail: "›",
+    price: "900",
+    section: "POSTRES",
+  }
+  ,
+  {
+    name: "Papas fritas",
+
+    detail: "› ",
+    price: "1100",
+    section: "TAPEOS",
+  },
+  {
+    name: "Papas gratinadas ",
+
+    detail: "› ",
+    price: "1300",
+    section: "TAPEOS",
+  }
+  ,
+  {
+    name: "Langostinos rebozados",
+
+    detail: "›",
+    price: "3200",
+    section: "TAPEOS",
+  }
+  ,
+  {
+    name: "Provoleta",
+
+    detail: "› Queso provolone fundido con pesto y tomates cherry",
+    price: "1100",
+    section: "TAPEOS",
+  },
+ 
+  {
+    name: "Tapero para compartir ",
+    detail: "› Rabas, Bastoncitos de Muzza, Aros de cebolla, Pollo Crispy",
+    price: "5200",
+    section: "TAPEOS",
+  },
+  {
+    name: "Rabas",
+
+    detail: "› CON LIMÓN Y ALIOLI",
+    price: "3100",
+    section: "TAPEOS",
+  },
+  {
+    name: "Bastoncitos de muzzarella",
+
+    detail: "› ",
+    price: "2100",
+    section: "TAPEOS",
+  },
+  {
+    name: "Tostados",
+
+    detail: "",
+    price: "1000",
+    section: "TAPEOS",
+  },
+  {
+    name: "Avocado toast",
+
+    detail: "",
+    price: "900",
+    section: "TAPEOS",
+  },
+  {
+    name: "Aros de cebolla",
+
+    detail: "",
+    price: "1400",
+    section: "TAPEOS",
+  },
+  {
+    name: "Pollo crispy",
+
+    detail: "",
+    price: "1900",
+    section: "TAPEOS",
+  },
+
+  {
+    name: "Lomito jyq",
+
+    detail:"›sale con fritas o ensalada: mixta",
+    price: "2100",
+    section: "PLATOS PRINCIPALES",
+  },
+  {
+    name: "Lomito completo ",
+
+    detail:"›sale con fritas o ensalada: mixta - Jamon, queso, lechuga, tomate ",
+    price: "2400",
+    section: "PLATOS PRINCIPALES",
+  },
+  {
+    name: "Milanesa de terneta jyq",
+
+    detail: "›sale con fritas o ensalada: mixta ",
+    price: "2000",
+    section: "PLATOS PRINCIPALES",
+  },
+  {
+    name: "Milanesa de ternera completa ",
+
+    detail: "›sale con fritas o ensalada: mixta ",
+    price: "2300",
+    section: "PLATOS PRINCIPALES",
+  },
+  {
+    name: "Milanesa de ternersa napolitana",
+
+    detail: "›sale con fritas o ensalada: mixta",
+    price: "2700",
+    section: "PLATOS PRINCIPALES",
+  },
+  {
+    name: "Milanesa de pollo jyq",
+    //  photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
+    detail: "›sale con fritas o ensalada: mixta",
+    price: "2100",
+    section: "PLATOS PRINCIPALES",
+  },
+  {
+    name: "Milanesa de pollo completa",
+    detail: "›sale con fritas o ensalada: mixta",
+    price: "2100",
+    section: "PLATOS PRINCIPALES",
+  },
+  {
+    name: "Milanesa de pollo  napolitana",
+
+    detail: "›sale con fritas o ensalada: mixta",
+    price: "2400",
+    section: "PLATOS PRINCIPALES",
+  }
+ ,
+  {
+    name: "Pechuga grillada a las finas hierbas: ",
+    //  photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
+    detail: "›sale con fritas o ensalada: mixta",
+    price: "2300",
+    section: "PLATOS PRINCIPALES",
+  }
+  ,
+  {
+    name: "Wok de vegetales ",
+    //  photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
+    detail: "›Verdeo, Zanahoria, Morron, Berenjena, Zucchini, Repollo, Arroz, Soja y Aceite de Sesamo",
+    price: "2100",
+    section: "PLATOS PRINCIPALES",
+  }
+  ,
+  {
+    name: "Wok de pollo ",
+    //  photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
+    detail: "›Ajo, Verdeo, Zanahoria, Morron, Berenjena, Zucchini, Champis, jengibre, Pollo y Salsa Teriyaki",
+    price: "2400",
+    section: "PLATOS PRINCIPALES",
+  }
+  ,
+  {
+    name: "Wok de lomo",
+    //  photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tyjpNmH6AQFzybK3XbWBX4fkw6E-E4GwJDd7a8SujC1C0xrbhmU3j8n9L8eM31qmAo0&usqp=CAU",
+    detail: "›Ajo, cebolla Morada, Zanahoria, Morron, Berenjena, Zucchini, Lonjas de Lomo, Soja y Mostaza Dijon",
+    price: "2700",
+    section: "PLATOS PRINCIPALES",
+  }
+  ,
+  {
+    name: "Lomito jyq",
+    detail: "Sale con fritas o mixtaSale con fritas o mixta",
+    price: "2500",
+    section: "SANDWICH",
+  },
+  {
+    name: "Lomito completo",
+    detail: "sale con fritas o ensalada: mixta - Jamon, queso, lechuga, tomate",
+    price: "2800",
+    section: "SANDWICH",
+  },
+  {
+    name: "Hamburguesa jyq",
+    detail: "Sale con fritas o mixta",
+    price: "1900",
+    section: "SANDWICH",
+  },
+  {
+    name: "Hamburguesa completa",
+    detail: "Sale con fritas o mixta",
+    price: "2100",
+    section: "SANDWICH",
+  },
+
+  {
+    name: "Milanesa de ternera jyq",
+    detail: "Sale con fritas o mixta",
+    price: "2300",
+    section: "SANDWICH",
+  },
+  {
+    name: "Milanesa de ternera completa ",
+    detail: "Sale con fritas o mixta",
+    price: "2700",
+    section: "SANDWICH",
+  },
+  {
+    name: "Milanesa de pollo jyq",
+    detail: "Sale con fritas o mixta",
+    price: "2100",
+    section: "SANDWICH",
+  },
+  {
+    name: "Milanesa de pollo completa ",
+    detail: "Sale con fritas o mixta",
+    price: "2500",
+    section: "SANDWICH",
+  },
+  {
+    name: "Hamburguesa veggie en pan de remolacha ",
+    detail: "Medallon de Lentejas con rucula, tomate y mayo de zanahoria - Sale con fritas o mixta",
+    price: "2100",
+    section: "SANDWICH",
+  },
+  {
+    name: "Chori a la planchetta ",
+    detail: "Chori puro cerdo, con jamón, queso, rúcula y chimi. Acompañado con dip de salsa criolla.",
+    price: "1800",
+    section: "SANDWICH",
+  },
+  {
+    name: "Adicional huevo frito ",
+    detail: "",
+    price: "600",
+    section: "SANDWICH",
+  },
+
+  {
+    name: "Chori a la plancha ",
+    detail: "Chori puro cerdo, con jamón, queso, rúcula y chimi. Acompañado con dip de salsa criolla. ",
+    price: "1800",
+    section: "SANDWICH",
+  }
+  ,
+  {
+    name: "Vacío tiernizado  ",
+    detail: "Con muzarela, tomate, Mayo de albahaca",
+    price: "2600",
+    section: "SANDWICH",
+  },
+  {
+    name: "Diosa verde",
+    detail: "Mix verde, cebolla morada, palta, manzana verde y tomate cherry",
+    price: "1600",
+    section: "ENSALSADAS",
+  },
+  {
+    name: "Mixta",
+    detail: "Lechuga tomate y cebollla",
+    price: "1300",
+    section: "ENSALSADAS",
+  },
+  {
+    name: "Caesar",
+    detail: "Lechuga, pollo, crutones, sardo y salsa caesar",
+    price: "2200",
+    section: "ENSALSADAS",
+  },
+  {
+    name: "Palta",
+    detail: "Arroz, palta, tomate y queso",
+    price: "20400",
+    section: "ENSALSADAS",
+  }
+  ,
+  {
+    name: "Fresca",
+    detail: "Repollo, Lechuga,Tomate, Zanahoria, Choclo y Hebras de Queso ",
+    price: "2200",
+    section: "ENSALSADAS",
+  }
+  ,
+
+  {
+    name: "SALSA ALIOLI-CAESAR-TARTARA",
+    detail: "Ideal para acompañar y levantar el sabor de cualquier plato, sandwich o ensalada",
+    price: "500",
+    section: "DIPS DE SALSAS",
+  }
+  ,
+  {
+    name: "MAYONESA DE ZANAHORIA-ALBAHACA-CIBOULETTE",
+    detail: "Ideal para acompañar y levantar el sabor de cualquier plato, sandwich o ensalada",
+    price: "500",
+    section: "DIPS DE SALSAS",
+  }
+  ,
+  {
+    name: "MEDITERRANEA Tomate, ajo, verdeo, pepino y limon",
+    detail: "Tomate, ajo, verdeo, pepino y limon - Ideal para acompañar y levantar el sabor de cualquier plato, sandwich o ensalada",
+    price: "500",
+    section: "DIPS DE SALSAS",
+  }
+  ,
+  {
+    name: "Jalapeños Picante",
+    detail: "Tomate, ajo, verdeo, pepino y limon - Ideal para acompañar y levantar el sabor de cualquier plato, sandwich o ensalada",
+    price: "500",
+    section: "DIPS DE SALSAS",
+  },
+  {
+    name: "Muzarella",
+    detail: "4 porciones",
+    price: "1400",
+    section: "PIZZAS",
+  },
+  {
+    name: "Americana",
+    detail: "Con panceta y huevo - 4 porciones",
+    price: "2000",
+    section: "PIZZAS",
+  },
+  {
+    name: "Especial",
+    detail: "4 porciones",
+    price: "1600",
+    section: "PIZZAS",
+  },
+  {
+    name: "Napolitana",
+    detail: "4 porciones",
+    price: "1600",
+    section: "PIZZAS",
+  },
+  {
+    name: "Capresse",
+    detail: "4 porciones",
+    price: "1500",
+    section: "PIZZAS",
+  },
+  {
+    name: "4 quesos",
+    detail: "Muzza, sardo, roquefort y provolone - 4 porciones",
+    price: "1800",
+    section: "PIZZAS",
+  },
+  {
+    name: "Roquefort apio y nuez",
+    detail: "4 porciones",
+    price: "2000",
+    section: "PIZZAS",
+  },
+  {
+    name: "Rucula, crudo, sardo y tomates secos",
+    detail: "4 porciones",
+    price: "2200",
+    section: "PIZZAS",
+  }
+ ,
+  {
+    name: "Agua 500cc ",
+    detail: "",
+    price: "400",
+    section: "SIN ALCOHOL",
+  },
+  {
+    name: "Agua 1,5lts",
+    detail: "",
+    price: "800",
+    section: "SIN ALCOHOL",
+  },
+  {
+    name: "Agua saborizada 500cc",
+    detail: "",
+    price: "500",
+    section: "SIN ALCOHOL",
+  },
+  {
+    name: "Agua saborizada 1,5lts ",
+    detail: "",
+    price: "1200",
+    section: "SIN ALCOHOL",
+  },
+  {
+    name: "Gaseosa 500cc",
+    detail: "Linea PEPSI",
+    price: "500",
+    section: "SIN ALCOHOL",
+  },
+  {
+    name: "Gaseosa 1,5lts",
+    detail: "Linea PEPSI",
+    price: "1300",
+    section: "SIN ALCOHOL",
+  }
+  ,
+  {
+    name: "Energozante",
+    detail: "RED BULL",
+    price: "700",
+    section: "SIN ALCOHOL",
+  },
+  {
+    name: "Limonada",
+    detail: "Con menta y jengibre",
+    price: "700",
+    section: "JUGOS & LICUADOS",
+  }
+  ,
+  {
+    name: "Jarra Limonada",
+    detail: "Con menta y jengibre",
+    price: "1200",
+    section: "JUGOS & LICUADOS",
+  },
+  {
+    name: "Pomelada",
+    detail: "",
+    price: "700",
+    section: "JUGOS & LICUADOS",
+  }
+  ,
+  {
+    name: "Jarra Pomelada",
+    detail: "",
+    price: "1200",
+    section: "JUGOS & LICUADOS",
+  },
+  {
+    name: "Jugo de naranja ",
+    detail: "Exprimido",
+    price: "700",
+    section: "JUGOS & LICUADOS",
+  }
+  ,
+  {
+    name: "Jarra Jugo de naranja ",
+    detail: "Exprimido",
+    price: "1200",
+    section: "JUGOS & LICUADOS",
+  }
+  ,
+  {
+    name: "Jugo Detox ",
+    detail: "Manzana verde, apio y pepitn",
+    price: "800",
+    section: "JUGOS & LICUADOS",
+  }
+  ,
+  {
+    name: "Jugo Beta ",
+    detail: "Naranja , pomelo, zanahoria, jengibre",
+    price: "800",
+    section: "JUGOS & LICUADOS",
+  },
+  {
+    name: "Licuado de fruta",
+    detail: "",
+    price: "700",
+    section: "JUGOS & LICUADOS",
+  },
+  {
+    name: "Licuado multifruta",
+    detail: "",
+    price: "800",
+    section: "JUGOS & LICUADOS",
+  }
+  ,
+  {
+    name: "MIX CITRICO ",
+    detail: "Durazno, frutilla, frutos Rojos",
+    price: "800",
+    section: "SIN ALCOHOL",
+  }
+  ,
+  {
+    name: "JUGO DETOX",
+    detail: "Manzana verde, apio, pepino y Kiwi",
+    price: "800",
+    section: "SIN ALCOHOL",
+  }
+  ,
+  {
+    name: "JUGO BETA",
+    detail: "Naranja, Pomelo, Zanahoria",
+    price: "800",
+    section: "SIN ALCOHOL",
+  },
+  {
+    name: "Corona 330",
+    detail: "700",
+    price: "700",
+    section: "CERVEZA",
+  },
+  {
+    name: "Corona 710",
+    detail: "",
+    price: "1200",
+    section: "CERVEZA",
+  },
+  {
+    name: "Stella 330",
+    detail: "Lata",
+    price: "500",
+    section: "CERVEZA",
+  },
+  {
+    name: "Stella 710",
+    detail: "",
+    price: "1000",
+    section: "CERVEZA",
+  },
+  {
+    name: "Lata Patagonia ",
+    detail: "",
+    price: "700",
+    section: "CERVEZA",
+  },
+  {
+    name: "Patagonia 710cc",
+    detail: "",
+    price: "1200",
+    section: "CERVEZA",
+  },
+  ,
+  {
+    name: "Malbec Orgánico",
+    detail: "Domaine Bousquet",
+    price: "2500",
+    section: "VINOS & CHAMPAGNE",
+  }
+  ,
+  {
+    name: "Sauvignon Blanc Orgánico",
+    detail: "Domaine Bousquet",
+    price: "2200",
+    section: "VINOS & CHAMPAGNE",
+  }
+  ,
+  {
+    name: "Rosé Orgánico",
+    detail: "Domaine Bousquet",
+    price: "2200",
+    section: "VINOS & CHAMPAGNE",
+  }
+  ,
+  {
+    name: "Extra Brut",
+    detail: "Chandon ",
+    price: "5200",
+    section: "VINOS & CHAMPAGNE",
+  }
+  ,
+  {
+    name: "Fernet",
+    detail: "",
+    price: "1200",
+    section: "COCTELERIA CLASSICA",
+  },
+  {
+    name: "Campari",
+    detail: "Con Naranja",
+    price: "1200",
+    section: "COCTELERIA CLASSICA",
+  },
+  {
+    name: "Vodka con jugo ",
+    detail: "Con Naranja",
+    price: "1400",
+    section: "COCTELERIA CLASSICA",
+  },
+  {
+    name: "Vermuth ",
+    detail: "",
+    price: "1000",
+    section: "COCTELERIA CLASSICA",
+  },
+  {
+    name: "WHISKY JOHNNIE WALKER ",
+    detail: "ETIQUETA NEGRA",
+    price: "2000",
+    section: "COCTELERIA CLASSICA",
+  },
+  {
+    name: "Cuba libre",
+    detail: "",
+    price: "1100",
+    section: "COCTELERIA CLASSICA",
+  },
+  {
+    name: "Orange malibu ",
+    detail: "",
+    price: "1100",
+    section: "COCTELERIA ESPECIAL",
+  },
+  {
+    name: "Negroni ",
+    detail: "",
+    price: "1400",
+    section: "COCTELERIA CLASSICA",
+  },
+  {
+    name: "Gin tonic",
+    detail: "Bombay",
+    price: "1700",
+    section: "COCTELERIA ESPECIAL",
+  }
+  ,
+  {
+    name: "Gin tonic",
+    detail: "Bosque",
+    price: "1200",
+    section: "COCTELERIA ESPECIAL",
+  }
+  ,
+  {
+    name: "Gin tonic Maracuya",
+    detail: "",
+    price: "1100",
+    section: "COCTELERIA ESPECIAL",
+  }
+  ,
+  {
+    name: "Gin tonic Frutos rojos",
+    detail: "",
+    price: "1300",
+    section: "COCTELERIA ESPECIAL",
+  },
+  {
+    name: "Jagger julep",
+    detail: "",
+    price: "1300",
+    section: "COCTELERIA ESPECIAL",
+  },
+  {
+    name: "Cynar julep",
+    detail: "",
+    price: "1400",
+    section: "COCTELERIA ESPECIAL",
+  },
+  {
+    name: "Mojito",
+    detail: "",
+    price: "1100",
+    section: "COCTELERIA ESPECIAL",
+  },
+  {
+    name: "Caipirinha ",
+    detail: "",
+    price: "1300",
+    section: "COCTELERIA ESPECIAL",
+  },
+  {
+    name: "Caipiriroska",
+    detail: "",
+    price: "1400",
+    section: "COCTELERIA ESPECIAL",
+  },
+  {
+    name: "Caipirisima",
+    detail: "Azúcar rubia, Agua, Menta, Limas, Maracuyá, Hielo, Amor                                            ",
+    price: "1400",
+    section: "COCTELERIA ESPECIAL",
+  },
+  {
+    name: "Caipi de maracuya ",
+    detail: "",
+    price: "1400",
+    section: "COCTELERIA ESPECIAL",
+  },
+  {
+    name: "Daiquiri",
+    detail: "",
+    price: "1400",
+    section: "COCTELERIA CLASSICA",
+  }
+];
