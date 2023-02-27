@@ -97,3 +97,51 @@ font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color:rgb(107, 48, 48);
 }
+/* Estilos para el iPhone 11 Pro */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+  .nameProd {
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .detProd {
+    font-size: 12px;
+    margin-top: 0.3rem;
+  }
+
+  .rightInfo {
+    padding-top: 0.5rem;
+    gap: 0.2rem;
+  }
+
+  .btnPlus {
+    width: 80px;
+    height: 36px;
+    font-size: 12px;
+    border-radius: 20px;
+    border-width: 2px;
+  }
+
+  .masMenos {
+    width: 80px;
+    height: 36px;
+    border-radius: 20px;
+  }
+
+  .masMenos > button {
+    font-size: 0.9rem;
+  }
+
+  .contCard {
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
