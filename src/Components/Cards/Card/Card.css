@@ -17,8 +17,8 @@
 .rightInfo {
   color: black;
   font-family: "Montserrat", sans-serif;
-  /* text-align: end; */
-  /* padding-right: 0.5rem; */
+  text-align: end;
+  padding-right: 0.5rem;
   padding-top: 1rem;
   text-align: center;
   display: flex;
@@ -50,7 +50,7 @@
 .masMenos {
   display: flex;
   border-radius: 16px;
-  overflow: hidden;
+  /* overflow: hidden; */
   align-items: center;
   width: 90px;
   height: 44px;
