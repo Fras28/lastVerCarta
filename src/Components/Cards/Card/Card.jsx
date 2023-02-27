@@ -47,7 +47,7 @@ export const Card = ({ producto }) => {
             </button>
           ) : (
             <div className="masMenos">
-              <button onClick={cancelFav}>
+              <button className="btn-svg" onClick={cancelFav}>
                 <svg
                   width="10"
                   height="10"
@@ -62,7 +62,7 @@ export const Card = ({ producto }) => {
                 </svg>
               </button>
               <p className="cuantiti">{thisFav.length}</p>
-              <button onClick={artAdd}>
+              <button className="btn-svg" onClick={artAdd}>
                 <svg
                   width="15"
                   height="10"
