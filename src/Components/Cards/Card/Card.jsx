@@ -49,8 +49,9 @@ export const Card = ({ producto }) => {
             <div className="masMenos">
               <button className="btn-svg" onClick={cancelFav}>
                 <svg
-                  width="10"
-                  height="10"
+                  // width="10"
+                  // height="10"
+                  className="svg-plus"
                   viewBox="0 0 934 255"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +65,9 @@ export const Card = ({ producto }) => {
               <p className="cuantiti">{thisFav.length}</p>
               <button className="btn-svg" onClick={artAdd}>
                 <svg
-                  width="15"
-                  height="10"
+                  // width="15"
+                  // height="10"
+                  className="svg-plus"
                   viewBox="0 0 728 728"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

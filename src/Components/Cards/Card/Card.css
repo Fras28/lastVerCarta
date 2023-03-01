@@ -108,6 +108,11 @@ font-family: "Montserrat", sans-serif;
   width: 100%;
   height: 100%;
 }
+.svg-minus,
+  .svg-plus {
+    width: 100%;
+    height: auto;
+  }
 /* Estilos para el iPhone 11 Pro */
 @media (max-width: 375px) {
   .btn-svg {
@@ -115,4 +120,5 @@ font-family: "Montserrat", sans-serif;
     height: 20px;
     margin-right: 0px;
   }
+
 }
