@@ -28,7 +28,7 @@
 .btnPlus {
   width: 90px;
   height: 44px;
-  border-radius: 24px;
+  border-radius: 16px;
   border: outset green 2px;
   font-family: "Montserrat", sans-serif;
   color: green;
@@ -53,7 +53,7 @@
   align-items: center;
   width: 90px;
   height: 44px;
-  border-radius: 24px;
+  border-radius: 16px;
   background-color: #E88A23;
   border: outset #E88A23 2px;
 }
@@ -116,8 +116,8 @@ font-family: "Montserrat", sans-serif;
 /* Estilos para el iPhone 11 Pro */
 @media (max-width: 375px) {
   .btn-svg {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     margin-right: 0px;
   }
 

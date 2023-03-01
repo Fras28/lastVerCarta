@@ -69,7 +69,8 @@
   margin-top: .3rem;
 }
 .sectioner > a:active {
-  background-color: #18a59d;
+  background-color: #fcac009d;
+  border-radius: orange;
 }
 
 
