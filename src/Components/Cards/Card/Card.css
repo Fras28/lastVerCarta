@@ -24,10 +24,16 @@
   display: flex;
   gap: 0.5rem;
 }
-
-.btnPlus {
+.divBtnProd{
   width: 90px;
   height: 44px;
+  align-items: center;
+  display: flex;
+}
+.btnPlus {
+
+  width: 100%;
+  height: 100%;
   border-radius: 16px;
   border: outset green 2px;
   font-family: "Montserrat", sans-serif;
@@ -49,13 +55,13 @@
 }
 .masMenos {
   display: flex;
-  /* overflow: hidden; */
   align-items: center;
-  width: 90px;
-  height: 44px;
+  justify-content: space-around;
   border-radius: 16px;
   background-color: #E88A23;
   border: outset #E88A23 2px;
+  width: 100%;
+  height: 100%;
 }
 .masMenos:hover{
     border: inset #E88A23 2px;
@@ -64,8 +70,8 @@
 .masMenos > button {
   border: none;
   background-color: transparent;
-  width: 93px;
-  height: 44px;
+  /* width: 60px;
+  height: 44px; */
   color: white;
   font-weight: 600;
   font-size: 1rem;

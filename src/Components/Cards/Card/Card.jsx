@@ -48,7 +48,7 @@ export const Card = ({ producto }) => {
           ) : (
             <div className="masMenos">
               <button className="btn-svg" onClick={cancelFav}>
-                <svg
+                {/* <svg
                   // width="10"
                   // height="10"
                   className="svg-plus"
@@ -60,11 +60,12 @@ export const Card = ({ producto }) => {
                     d="M806.52 0.906616H127.013C81.6385 0.906616 39.7064 25.1146 17.0184 64.4119C-5.66956 103.709 -5.66956 152.125 17.0184 191.428C39.7064 230.725 81.6385 254.933 127.013 254.933H806.52C851.894 254.933 893.826 230.725 916.514 191.428C939.202 152.125 939.202 103.709 916.514 64.4119C893.826 25.1146 851.894 0.906616 806.52 0.906616V0.906616Z"
                     fill="white"
                   />
-                </svg>
+                </svg> */}
+                -
               </button>
               <p className="cuantiti">{thisFav.length}</p>
               <button className="btn-svg" onClick={artAdd}>
-                <svg
+                {/* <svg
                   // width="15"
                   // height="10"
                   className="svg-plus"
@@ -78,7 +79,8 @@ export const Card = ({ producto }) => {
                     d="M50.246 269.753H269.753V50.246C269.753 -16.7487 457.526 -16.7487 457.526 50.246V269.753H677.033C744.027 269.753 744.027 457.526 677.033 457.526H457.526V677.033C457.526 744.027 269.753 744.027 269.753 677.033V457.526H50.246C-16.7487 457.526 -16.7487 269.753 50.246 269.753V269.753Z"
                     fill="white"
                   />
-                </svg>
+                </svg> */}
+                +
               </button>
             </div>
           )}
