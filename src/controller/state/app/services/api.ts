@@ -7,6 +7,6 @@ export const api = createApi({
         credentials: 'include',
         mode: 'cors',
     }),
-    tagTypes: [],
+    tagTypes: ['Orders', 'Products', 'Sales', 'Waiters', 'Tables', 'Sections'],
     endpoints: () => ({}),
 });

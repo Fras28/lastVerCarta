@@ -10,9 +10,10 @@ export const LoginForm = () => {
     const [login, { isSuccess, isLoading, isError }] = useLoginMutation();
     const dispatch = useAppDispatch();
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const { name, value } = e.target;
-        setLoginState((prevState) => ({ ...prevState, [name]: value }));
+    const handleChange = (name: string | undefined, value: string | undefined) => {
+        if (name) {
+            setLoginState((prevState) => ({ ...prevState, [name]: value }));
+        }
     };
 
     const handleSubmit = async (e: FormEvent) => {

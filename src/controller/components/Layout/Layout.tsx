@@ -5,8 +5,7 @@ import { CircularProgress } from '@mui/material';
 import { Box } from '@mui/system';
 import { useRouter } from 'next/router';
 import React from 'react';
-import { GoogleLoginForm } from '../Forms/Login/GoogleLoginForm';
-import { LoginForm } from '../Forms/Login/LoginForm';
+import { LoginForm } from '../Forms/LoginForm';
 import { NavigationRail } from '../Nav/NavigationRail';
 
 interface IProps {
@@ -35,7 +34,6 @@ export const Layout = ({ children, isAuth }: IProps) => {
             {!isLoggedIn && !isLoading && (
                 <Box display="flex" justifyContent="center" height="100%" flexDirection="column" alignItems="center">
                     <LoginForm />
-                    <GoogleLoginForm />
                 </Box>
             )}
             {isLoading && (
@@ -46,7 +44,7 @@ export const Layout = ({ children, isAuth }: IProps) => {
             {isLoggedIn && (
                 <>
                     <NavigationRail />
-                    <Box component="main" display="flex" ml="80px" height="100%" justifyContent="center" flexDirection="column" alignItems="center">
+                    <Box component="main" display="flex" ml="100px" height="100%" justifyContent="center" flexDirection="column" alignItems="center" gap="40px">
                         {children}
                     </Box>
                 </>
