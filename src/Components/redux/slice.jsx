@@ -1,23 +1,29 @@
 import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-import { jsonCafe } from "../json";
 
 const initialState = {
   allProduct: [],
   copyallProducts: [],
   favProd: [],
+  categorias:[]
 };
+
 
 export const dataSlice = createSlice({
   name: "allData",
   initialState,
   reducers: {
     allProducts: (state, action) => {
-      state.allProduct = action.payload.jsonCafe;
-      state.copyallProducts = action.payload.jsonCafe;
+      // console.log(action.payload, "reducer articulos");
+      state.allProduct = action.payload;
+      state.copyallProducts = action.payload;
     },
-
+    allCategorias:(state, action) => {
+      // console.log(action.payload, "reducer articulos");
+      state.categorias = action.payload;
+    },
+    
     favProducts: (state, action) => {
       state.favProd = [...state.favProd, action.payload];
     },
@@ -28,11 +34,11 @@ export const dataSlice = createSlice({
         const newBag = state.favProd.splice(indexProd,1)
         state.favProd = state.favProd.filter(e => e !== newBag)
       } 
-     },
+    },
     SearchProducts: (state, action) => {
       state.copyallProducts = state.copyallProducts
-        .filter((e) => e.name.includes(action.payload) === true)
-        .slice(0, 10);
+      .filter((e) => e.name.includes(action.payload) === true)
+      .slice(0, 10);
     },
   },
 });
@@ -40,10 +46,29 @@ export const dataSlice = createSlice({
 //-------------------------------------------------------------------------------------------------------------------
 //------------------------------------------ function Movies ------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------
+const API_STRAPI_ARTICTULOS = process.env.REACT_APP_API_STRAPI_ARTICTULOS;
+const API_CATEGORIAS = process.env.REACT_APP_API_STRAPI_CATEGORIAS;
 
-export const asyncallProducts = () => {
+export const asyncAllProducts = () => {
+  console.log("All PRODUCTS SLICE");
   return async function (dispatch) {
-    return dispatch(allProducts({ jsonCafe }));
+    try {
+      const response = await axios.get(API_STRAPI_ARTICTULOS);
+      console.log(response.data.data,"todo lo que trae de articulos");
+      return dispatch(allProducts(response.data.data));
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+};
+export const asyncCategorias = () => {
+  return async function (dispatch) {
+    try {
+      const response = await axios.get(API_CATEGORIAS);
+      return dispatch(allCategorias(response.data.data));
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
 };
 
@@ -63,7 +88,6 @@ export const asyncSearchBar = (string) => {
   };
 };
 export const asyncOrder = (pedido)=>{
-console.log(pedido, "este es el pedido slice")
   return async function ( dispatch ){
     try{
       await axios.post(`https://ecommerce-demo.onrender.com/addP`,pedido);
@@ -77,7 +101,7 @@ console.log(pedido, "este es el pedido slice")
 
 //----------------------------------------------------------------------------------------------------------------
 
-export const { allProducts, favProducts, cancelBagProducts, SearchProducts } =
+export const { allProducts, favProducts, cancelBagProducts, SearchProducts, allCategorias } =
   dataSlice.actions;
 
 export default dataSlice.reducer;

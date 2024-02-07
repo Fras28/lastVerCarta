@@ -4,8 +4,9 @@ import { Card } from "./Card/Card";
 import "./Cards.css";
 
 export const Cards = ({ products }) => {
+  console.log(products[0]?.attributes, "que llega a la card");
   return (
-    <div className="carta">
+    <div className="carta" >
       <h2 className="titleSection">
         <svg
        
@@ -22,7 +23,7 @@ export const Cards = ({ products }) => {
           />
         </svg>
 
-        {products[0]?.section.toUpperCase()}
+        {products[0]?.attributes?.sub_categoria?.data?.attributes?.name.toUpperCase()}
       </h2>
       <div className="rowsCard">
         {products?.map((e) => (
