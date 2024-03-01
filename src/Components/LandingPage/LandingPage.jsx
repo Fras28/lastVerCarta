@@ -66,39 +66,23 @@ console.log(categorias, "categorias");
       </div>
 
       <div className="conteinerLB2  ">
-        <div className="rowsCardL">
-          <NavLink
-            className="navLink"
-            to={
-              url.location.pathname === "/"
-                ? `/Cafeteria`
-                : `${url.location.pathname}/Cafeteria`
-            }
-          >
-            <div className="titInicio">
-              <img src={cafPast} alt="fotito" />
-              <p>{categorias[2]?.attributes?.name}</p>
-            </div>
-          </NavLink>
-          <NavLink className="navLink" to={`${url.location.pathname}/Comidas`}>
-            <div className="titInicio">
-              <img src={comidas} alt=""/>
-              <p>{categorias[0]?.attributes?.name}</p>
-            </div>
-          </NavLink>
-          {/* <NavLink className="navLink" to={`${url.location.pathname}/Bebidas`}> */}
-          <div className="titInicio">
-            <img src={bebidas}  alt=""/>
-            <p>{categorias[1]?.attributes?.name}</p>
+      
+         <NavLink to={`${url.location.pathname}/Bares`}>
+        <div className="eventsL">
+        <div className="titInicio">
+            <img className="evImg" src="https://media.timeout.com/images/103377942/750/422/image.jpg" alt="" />
+            <p>Bares</p>
           </div>
-          {/* </NavLink> */}
-          <NavLink to={`${url.location.pathname}/SpecialEvent`}>
-          <div className="titInicio especial">
-            <img src={NYEShanti} alt="" />
-            <p>AÑO NUEVO</p>
-          </div>
-          </NavLink>
         </div>
+        </NavLink>
+        <NavLink to={`${url.location.pathname}/Verdulerias`}>
+        <div className="eventsL">
+        <div className="titInicio">
+            <img className="evImg" src="https://st.depositphotos.com/1009051/3222/i/450/depositphotos_32227773-stock-photo-a-lot-of-fresh-fruits.jpg" alt="" />
+            <p>Verdulerias</p>
+          </div>
+        </div>
+        </NavLink>
         <NavLink to={`${url.location.pathname}/TrackClub`}>
         <div className="eventsL">
         <div className="titInicio">

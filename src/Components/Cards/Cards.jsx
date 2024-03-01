@@ -23,7 +23,7 @@ export const Cards = ({ products }) => {
           />
         </svg>
 
-        {products[0]?.attributes?.sub_categoria?.data?.attributes?.name.toUpperCase()}
+        {products[0]?.section.toUpperCase()}
       </h2>
       <div className="rowsCard">
         {products?.map((e) => (

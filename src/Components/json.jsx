@@ -633,6 +633,9 @@ export let jsonCafe = [
     section: "JUGOS & LICUADOS",
   }
   ,
+  
+  
+
   {
     name: "Jugo Beta ",
     detail: "Naranja , pomelo, zanahoria, jengibre",
@@ -859,5 +862,126 @@ export let jsonCafe = [
     detail: "",
     price: "1400",
     section: "COCTELERIA CLASSICA",
+  } ,
+  {
+    name: "Manzanas",
+    detail: "Frescas y jugosas",
+    price: "1500",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Plátanos",
+    detail: "Maduros y listos para comer",
+    price: "1200",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Uvas",
+    detail: "Variedad de uvas frescas",
+    price: "1800",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Zanahorias",
+    detail: "Zanahorias orgánicas",
+    price: "900",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Tomates",
+    detail: "Tomates de la mejor calidad",
+    price: "1300",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Papas",
+    detail: "Papas frescas de la temporada",
+    price: "1100",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Espinacas",
+    detail: "Espinacas orgánicas y frescas",
+    price: "1600",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Fresas",
+    detail: "Fresas rojas y dulces",
+    price: "2000",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Cebollas",
+    detail: "Cebollas amarillas y rojas",
+    price: "950",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Pimientos",
+    detail: "Variedad de pimientos frescos",
+    price: "1700",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Sandías",
+    detail: "Sandías jugosas y refrescantes",
+    price: "2500",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Naranjas",
+    detail: "Naranjas de la mejor calidad",
+    price: "1200",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Limones",
+    detail: "Limones frescos para tus recetas",
+    price: "1000",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Pepinos",
+    detail: "Pepinos crujientes y deliciosos",
+    price: "1100",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Aguacates",
+    detail: "Aguacates maduros y listos para comer",
+    price: "1800",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Piñas",
+    detail: "Piñas frescas y jugosas",
+    price: "2000",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Mangos",
+    detail: "Mangos maduros y deliciosos",
+    price: "1600",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Cilantro",
+    detail: "Cilantro fresco para tus platillos",
+    price: "800",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Ajo",
+    detail: "Ajo fresco para realzar tus comidas",
+    price: "900",
+    section: "VERDULERIA"
+  },
+  {
+    name: "Calabacines",
+    detail: "Calabacines tiernos y sabrosos",
+    price: "1400",
+    section: "VERDULERIA"
   }
+
 ];
